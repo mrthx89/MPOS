@@ -1,0 +1,44 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="6">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colNoID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Name">colKode</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">165</property>
+      <property name="Name">colNama</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">175</property>
+      <property name="Name">colAlamat</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">146</property>
+      <property name="Name">colPenanggungJawab</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Name">colIsAktif</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ColumnAutoWidth">false</property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

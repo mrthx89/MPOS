@@ -1,0 +1,142 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="23">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Width">95</property>
+      <property name="Name">colKode</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">105</property>
+      <property name="Name">colBarcode</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">305</property>
+      <property name="Name">colNama</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">SUM={0:n2}</property>
+        <property name="FieldName">QtyMasukPcs</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colQtyMasukPcs</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">SUM={0:n2}</property>
+        <property name="FieldName">QtyKeluarPcs</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colQtyKeluarPcs</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">91</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Count</property>
+        <property name="DisplayFormat">{0}</property>
+        <property name="FieldName">JenisTransaksi</property>
+        <property name="Tag" isnull="true" />
+      </property>
+      <property name="Name">colJenisTransaksi</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Width">36</property>
+      <property name="Name">colNoID</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Width">56</property>
+      <property name="Name">colIDKontak</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">95</property>
+      <property name="Name">colKodeReff</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">63</property>
+      <property name="Name">colTanggal</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Width">57</property>
+      <property name="Name">colIDBarang</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Width">95</property>
+      <property name="Name">colIDJenisTransaksi</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Width">68</property>
+      <property name="Name">colIDTransaksi</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Width">57</property>
+      <property name="Name">colIDSatuan</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Width">60</property>
+      <property name="Name">colQtyMasuk</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Width">60</property>
+      <property name="Name">colQtyKeluar</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Width">50</property>
+      <property name="Name">colKonversi</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Width">63</property>
+      <property name="Name">colHPP</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Width">99</property>
+      <property name="Name">colHargaBeliTerakhir</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Width">43</property>
+      <property name="Name">colSatuan</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">71</property>
+      <property name="Name">colSaldoAwal</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Width">72</property>
+      <property name="Name">colSaldoAkhir</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Name">colSaldoAkhir1</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ColumnAutoWidth">false</property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

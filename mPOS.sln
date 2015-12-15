@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "mPOS", "mPOS\mPOS.vbproj", "{78520C32-B03E-4E95-94D3-D9F46E6710B1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Elliteserv.StyleIcon", "Frameworks\Elliteserv.StyleIcon\Elliteserv.StyleIcon.vbproj", "{4FDE1357-63F3-47DA-8A62-945314046A3F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Elliteserv.SQLServer", "Frameworks\Elliteserv.SQLServer\Elliteserv.SQLServer.vbproj", "{FA04D908-571D-4D91-99C6-7460B8C73371}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Elliteserv.Fungsi", "Frameworks\Elliteserv.Fungsi\Elliteserv.Fungsi.vbproj", "{44BD9554-64EC-4E62-A24F-346C99693930}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks", "Frameworks", "{73302FFA-F036-4038-BEA0-37E63B1DC03F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78520C32-B03E-4E95-94D3-D9F46E6710B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78520C32-B03E-4E95-94D3-D9F46E6710B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78520C32-B03E-4E95-94D3-D9F46E6710B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78520C32-B03E-4E95-94D3-D9F46E6710B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDE1357-63F3-47DA-8A62-945314046A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDE1357-63F3-47DA-8A62-945314046A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDE1357-63F3-47DA-8A62-945314046A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDE1357-63F3-47DA-8A62-945314046A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA04D908-571D-4D91-99C6-7460B8C73371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA04D908-571D-4D91-99C6-7460B8C73371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA04D908-571D-4D91-99C6-7460B8C73371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA04D908-571D-4D91-99C6-7460B8C73371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BD9554-64EC-4E62-A24F-346C99693930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BD9554-64EC-4E62-A24F-346C99693930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BD9554-64EC-4E62-A24F-346C99693930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BD9554-64EC-4E62-A24F-346C99693930}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA04D908-571D-4D91-99C6-7460B8C73371} = {73302FFA-F036-4038-BEA0-37E63B1DC03F}
+		{44BD9554-64EC-4E62-A24F-346C99693930} = {73302FFA-F036-4038-BEA0-37E63B1DC03F}
+		{4FDE1357-63F3-47DA-8A62-945314046A3F} = {73302FFA-F036-4038-BEA0-37E63B1DC03F}
+	EndGlobalSection
+EndGlobal

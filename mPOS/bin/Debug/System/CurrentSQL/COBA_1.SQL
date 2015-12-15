@@ -1,0 +1,1 @@
+UPDATE HMenu SET TypeMenu=TypeMenu

@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kode" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyMasukPcs" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyKeluarPcs" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JenisTransaksi" type="xs:string" minOccurs="0" />
+              <xs:element name="NoID" type="xs:int" minOccurs="0" />
+              <xs:element name="IDKontak" type="xs:int" minOccurs="0" />
+              <xs:element name="KodeReff" type="xs:string" minOccurs="0" />
+              <xs:element name="Tanggal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDBarang" type="xs:int" minOccurs="0" />
+              <xs:element name="IDJenisTransaksi" type="xs:int" minOccurs="0" />
+              <xs:element name="IDTransaksi" type="xs:int" minOccurs="0" />
+              <xs:element name="IDSatuan" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyMasuk" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyKeluar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Konversi" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HPP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HargaBeliTerakhir" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Satuan" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoAwal" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoAkhir" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

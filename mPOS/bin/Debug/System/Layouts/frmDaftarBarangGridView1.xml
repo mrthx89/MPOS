@@ -127,7 +127,7 @@
     <property name="Item23" isnull="true" iskey="true">
       <property name="VisibleIndex">17</property>
       <property name="Visible">true</property>
-      <property name="Width">41</property>
+      <property name="Width">63</property>
       <property name="Name">colHPP</property>
     </property>
     <property name="Item24" isnull="true" iskey="true">

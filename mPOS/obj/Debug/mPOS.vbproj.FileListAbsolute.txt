@@ -70,3 +70,4 @@ D:\BUILDING\mPOS\mPOS\obj\Debug\mPOS.frmLaporanPenjualanPalingLaku.resources
 D:\BUILDING\mPOS\mPOS\obj\Debug\mPOS.frmLaporanPenjualanPerCustomer.resources
 D:\BUILDING\mPOS\mPOS\obj\Debug\mPOS.frmLaporanPembelianDetil.resources
 D:\BUILDING\mPOS\mPOS\obj\Debug\mPOS.frmDaftarMasterBarang.resources
+D:\GITHUB\MPOS\mPOS\bin\Debug\mPOS.exe.config

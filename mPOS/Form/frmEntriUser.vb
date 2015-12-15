@@ -14,6 +14,7 @@ Public Class frmEntriUser
     Dim reppicedit As New RepositoryItemPictureEdit
     Dim SQL As String = ""
 
+
     Private Sub cmdClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClose.Click
         DialogResult = Windows.Forms.DialogResult.Cancel
         Me.Close()

@@ -427,7 +427,7 @@
       <property name="TypeName">TabbedGroup</property>
       <property name="ShowTabHeader">Default</property>
       <property name="HeaderAutoFill">Default</property>
-      <property name="SelectedTabPageName">LayoutControlGroup3</property>
+      <property name="SelectedTabPageName">LayoutControlGroup2</property>
       <property name="HeaderOrientation">Default</property>
     </property>
     <property name="Item8" isnull="true" iskey="true">

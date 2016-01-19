@@ -47,14 +47,10 @@
       <property name="Name">colSupplier1</property>
     </property>
     <property name="Item8" isnull="true" iskey="true">
-      <property name="VisibleIndex">6</property>
-      <property name="Visible">true</property>
       <property name="Width">66</property>
       <property name="Name">colSupplier2</property>
     </property>
     <property name="Item9" isnull="true" iskey="true">
-      <property name="VisibleIndex">7</property>
-      <property name="Visible">true</property>
       <property name="Width">66</property>
       <property name="Name">colSupplier3</property>
     </property>
@@ -65,7 +61,7 @@
       <property name="Name">colKategori</property>
     </property>
     <property name="Item11" isnull="true" iskey="true">
-      <property name="VisibleIndex">10</property>
+      <property name="VisibleIndex">8</property>
       <property name="Visible">true</property>
       <property name="Width">56</property>
       <property name="Name">colIsAktif</property>
@@ -79,13 +75,13 @@
       <property name="Name">colAlias</property>
     </property>
     <property name="Item14" isnull="true" iskey="true">
-      <property name="VisibleIndex">8</property>
+      <property name="VisibleIndex">6</property>
       <property name="Visible">true</property>
       <property name="Width">63</property>
       <property name="Name">colQtyMax</property>
     </property>
     <property name="Item15" isnull="true" iskey="true">
-      <property name="VisibleIndex">9</property>
+      <property name="VisibleIndex">7</property>
       <property name="Visible">true</property>
       <property name="Width">59</property>
       <property name="Name">colQtyMin</property>
@@ -107,26 +103,20 @@
       <property name="Name">colIDSatuanBeli</property>
     </property>
     <property name="Item20" isnull="true" iskey="true">
-      <property name="VisibleIndex">11</property>
-      <property name="Visible">true</property>
       <property name="Width">82</property>
       <property name="Name">colKonversiBeli</property>
     </property>
     <property name="Item21" isnull="true" iskey="true">
-      <property name="VisibleIndex">12</property>
+      <property name="VisibleIndex">9</property>
       <property name="Visible">true</property>
       <property name="Width">100</property>
       <property name="Name">colHargaBeliNetto</property>
     </property>
     <property name="Item22" isnull="true" iskey="true">
-      <property name="VisibleIndex">13</property>
-      <property name="Visible">true</property>
       <property name="Width">72</property>
       <property name="Name">colSaldoStok</property>
     </property>
     <property name="Item23" isnull="true" iskey="true">
-      <property name="VisibleIndex">17</property>
-      <property name="Visible">true</property>
       <property name="Width">63</property>
       <property name="Name">colHPP</property>
     </property>
@@ -135,19 +125,17 @@
       <property name="Name">colIDSatuanJual</property>
     </property>
     <property name="Item25" isnull="true" iskey="true">
-      <property name="VisibleIndex">15</property>
-      <property name="Visible">true</property>
       <property name="Width">85</property>
       <property name="Name">colKonversiJual</property>
     </property>
     <property name="Item26" isnull="true" iskey="true">
-      <property name="VisibleIndex">16</property>
+      <property name="VisibleIndex">11</property>
       <property name="Visible">true</property>
       <property name="Width">61</property>
       <property name="Name">colMarkUp</property>
     </property>
     <property name="Item27" isnull="true" iskey="true">
-      <property name="VisibleIndex">18</property>
+      <property name="VisibleIndex">12</property>
       <property name="Visible">true</property>
       <property name="Width">73</property>
       <property name="Name">colHargaJual</property>
@@ -157,19 +145,17 @@
       <property name="Name">colIDUserLastUpdate</property>
     </property>
     <property name="Item29" isnull="true" iskey="true">
-      <property name="VisibleIndex">19</property>
+      <property name="VisibleIndex">13</property>
       <property name="Visible">true</property>
       <property name="Width">94</property>
       <property name="Name">colLastUpdate</property>
     </property>
     <property name="Item30" isnull="true" iskey="true">
-      <property name="VisibleIndex">20</property>
-      <property name="Visible">true</property>
       <property name="Width">54</property>
       <property name="Name">colIsPoin</property>
     </property>
     <property name="Item31" isnull="true" iskey="true">
-      <property name="VisibleIndex">14</property>
+      <property name="VisibleIndex">10</property>
       <property name="Visible">true</property>
       <property name="Width">56</property>
       <property name="Name">colSatuan</property>

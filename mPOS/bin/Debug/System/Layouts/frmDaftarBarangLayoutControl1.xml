@@ -164,7 +164,7 @@
       <property name="MinSize">@3,Width=104@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@2,Y=45</property>
-      <property name="Size">@4,Width=1033@3,Height=502</property>
+      <property name="Size">@4,Width=1038@3,Height=502</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -540,63 +540,15 @@
     </property>
     <property name="Item11" isnull="true" iskey="true">
       <property name="ParentName">Root</property>
-      <property name="CustomizationFormText">LayoutControlItem10</property>
-      <property name="Text">LayoutControlItem10</property>
-      <property name="TextVisible">false</property>
-      <property name="ImageToTextDistance">5</property>
-      <property name="MaxSize">@1,Width=0@1,Height=0</property>
-      <property name="MinSize">@3,Width=104@2,Height=24</property>
-      <property name="ShowInCustomizationForm">true</property>
-      <property name="Location">@4,X=1033@3,Y=412</property>
-      <property name="Size">@3,Width=305@3,Height=135</property>
-      <property name="AppearanceItemCaption" isnull="true" iskey="true">
-        <property name="Font">Tahoma, 8.25pt</property>
-        <property name="BackColor2" />
-        <property name="BackColor" />
-        <property name="ForeColor" />
-        <property name="BorderColor" />
-        <property name="GradientMode">Horizontal</property>
-      </property>
-      <property name="OptionsCustomization" isnull="true" iskey="true">
-        <property name="AllowDrop">Default</property>
-        <property name="AllowDrag">Default</property>
-      </property>
-      <property name="OptionsToolTip" isnull="true" iskey="true">
-        <property name="IconToolTipTitle" />
-        <property name="IconToolTipIconType">None</property>
-        <property name="EnableIconToolTip">true</property>
-        <property name="IconToolTip" />
-        <property name="ToolTip" />
-        <property name="ToolTipTitle" />
-        <property name="ToolTipIconType">None</property>
-      </property>
-      <property name="ImageAlignment">MiddleLeft</property>
-      <property name="Padding">2, 2, 2, 2</property>
-      <property name="TextAlignMode">UseParentOptions</property>
-      <property name="Spacing">0, 0, 0, 0</property>
-      <property name="AllowHtmlStringInCaption">false</property>
-      <property name="Name">LayoutControlItem10</property>
-      <property name="TypeName">LayoutControlItem</property>
-      <property name="ControlName">GridControl3</property>
-      <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@1,Width=0@1,Height=0</property>
-      <property name="Visibility">Always</property>
-      <property name="ImageIndex">-1</property>
-      <property name="Image" isnull="true" />
-      <property name="TextToControlDistance">0</property>
-      <property name="TextLocation">Left</property>
-    </property>
-    <property name="Item12" isnull="true" iskey="true">
-      <property name="ParentName">Root</property>
       <property name="CustomizationFormText">Gambar</property>
       <property name="Text">Gambar</property>
       <property name="TextVisible">false</property>
       <property name="ImageToTextDistance">5</property>
-      <property name="MaxSize">@1,Width=0@1,Height=0</property>
-      <property name="MinSize">@2,Width=24@2,Height=24</property>
+      <property name="MaxSize">@3,Width=300@1,Height=0</property>
+      <property name="MinSize">@3,Width=300@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
-      <property name="Location">@4,X=1033@2,Y=45</property>
-      <property name="Size">@3,Width=305@3,Height=198</property>
+      <property name="Location">@4,X=1038@2,Y=45</property>
+      <property name="Size">@3,Width=300@3,Height=502</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -626,7 +578,7 @@
       <property name="Name">LayoutControlItem11</property>
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">PictureEdit1</property>
-      <property name="SizeConstraintsType">Default</property>
+      <property name="SizeConstraintsType">Custom</property>
       <property name="TextSize">@1,Width=0@1,Height=0</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
@@ -634,8 +586,8 @@
       <property name="TextToControlDistance">0</property>
       <property name="TextLocation">Left</property>
     </property>
-    <property name="Item13" isnull="true" iskey="true">
-      <property name="ParentName">Root</property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="ParentName">Customization</property>
       <property name="CustomizationFormText">LayoutControlItem9</property>
       <property name="Text">LayoutControlItem9</property>
       <property name="TextVisible">false</property>
@@ -674,6 +626,54 @@
       <property name="Name">LayoutControlItem9</property>
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">GridControl2</property>
+      <property name="SizeConstraintsType">Default</property>
+      <property name="TextSize">@1,Width=0@1,Height=0</property>
+      <property name="Visibility">Always</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Image" isnull="true" />
+      <property name="TextToControlDistance">0</property>
+      <property name="TextLocation">Left</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="ParentName">Customization</property>
+      <property name="CustomizationFormText">LayoutControlItem10</property>
+      <property name="Text">LayoutControlItem10</property>
+      <property name="TextVisible">false</property>
+      <property name="ImageToTextDistance">5</property>
+      <property name="MaxSize">@1,Width=0@1,Height=0</property>
+      <property name="MinSize">@3,Width=104@2,Height=24</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="Location">@4,X=1033@3,Y=243</property>
+      <property name="Size">@3,Width=305@3,Height=304</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="Font">Tahoma, 8.25pt</property>
+        <property name="BackColor2" />
+        <property name="BackColor" />
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrop">Default</property>
+        <property name="AllowDrag">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+        <property name="IconToolTip" />
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+      </property>
+      <property name="ImageAlignment">MiddleLeft</property>
+      <property name="Padding">2, 2, 2, 2</property>
+      <property name="TextAlignMode">UseParentOptions</property>
+      <property name="Spacing">0, 0, 0, 0</property>
+      <property name="AllowHtmlStringInCaption">false</property>
+      <property name="Name">LayoutControlItem10</property>
+      <property name="TypeName">LayoutControlItem</property>
+      <property name="ControlName">GridControl3</property>
       <property name="SizeConstraintsType">Default</property>
       <property name="TextSize">@1,Width=0@1,Height=0</property>
       <property name="Visibility">Always</property>

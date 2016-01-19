@@ -25,3 +25,12 @@ D:\BUILDING\mPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.
 D:\BUILDING\mPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.dll
 D:\BUILDING\mPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.xml
 D:\BUILDING\mPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\bin\Debug\Elliteserv.StyleIcon.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\bin\Debug\Elliteserv.StyleIcon.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\bin\Debug\Elliteserv.StyleIcon.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\ResolveAssemblyReference.cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.Resources.resources
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.vbproj.GenerateResource.Cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.StyleIcon\obj\Debug\Elliteserv.StyleIcon.pdb

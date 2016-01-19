@@ -192,7 +192,7 @@ Public Class frmDaftarTransaksi
                     EksekusiSQL("DELETE FROM HJualD WHERE IDHeader=" & NoID)
                     RefreshData()
                 End If
-            Case "frmDaftarReturJual".ToLower
+            Case "frmDaftarReturPenjualan".ToLower
                 If NoID >= 1 AndAlso _
                XtraMessageBox.Show("Yakin ingin menghapus data Retur Penjualan yang dipilih ini?", NamaAplikasi, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
                     EksekusiSQL("DELETE FROM HKartuStok WHERE IDJenisTransaksi=4 AND IDTransaksi=" & NoID)

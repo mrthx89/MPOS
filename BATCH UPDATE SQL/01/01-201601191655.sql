@@ -3,7 +3,7 @@
 -- Create date: 18-01-2016
 -- Description:	Update Master Barang Dari Pembelian
 -- =============================================
-CREATE PROCEDURE SP_UpdateBarangDariPembelian
+ALTER PROCEDURE SP_UpdateBarangDariPembelian
 @IDBeli BIGINT,
 @IDUser BIGINT
 AS
@@ -28,7 +28,7 @@ BEGIN
 		SELECT @IDBarang = IDBarang
 		FROM @TableTemp WHERE PKID = @i
 
-		SELECT @Dataterakhir = CASE WHEN COUNT(NoID) >= 1 THEN 1 ELSE 0 END
+		SELECT @Dataterakhir = CASE WHEN COUNT(NoID) >= 1 THEN 0 ELSE 1 END
 		FROM HKartuStok
 		WHERE IDJenisTransaksi = 1 AND IDTransaksi > @IDBeli AND IDBarang = @IDBarang
 		GROUP BY IDJenisTransaksi, IDTransaksi
@@ -45,7 +45,7 @@ BEGIN
 		SELECT @IDBarang = IDBarang, @Dataterakhir = IsUpdate
 		FROM @TableTemp WHERE PKID = @i
 
-		IF @Dataterakhir = 1
+		IF ISNULL(@Dataterakhir,1) = 1
 		BEGIN
 			UPDATE HBarang SET 
 			HPP=HBeliD.Jumlah/HBeliD.Qty, 

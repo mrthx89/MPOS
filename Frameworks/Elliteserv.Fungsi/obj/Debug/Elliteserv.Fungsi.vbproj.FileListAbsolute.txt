@@ -25,3 +25,12 @@ D:\BUILDING\mPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.vbproj
 D:\BUILDING\mPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.dll
 D:\BUILDING\mPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.xml
 D:\BUILDING\mPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\bin\Debug\Elliteserv.Fungsi.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\bin\Debug\Elliteserv.Fungsi.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\bin\Debug\Elliteserv.Fungsi.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\ResolveAssemblyReference.cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.Resources.resources
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.vbproj.GenerateResource.Cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.Fungsi\obj\Debug\Elliteserv.Fungsi.pdb

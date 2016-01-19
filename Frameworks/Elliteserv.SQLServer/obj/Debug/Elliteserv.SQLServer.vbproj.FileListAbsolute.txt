@@ -34,3 +34,15 @@ D:\BUILDING\mPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.
 D:\BUILDING\mPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.dll
 D:\BUILDING\mPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.xml
 D:\BUILDING\mPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.SQLServer.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.SQLServer.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.SQLServer.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.Fungsi.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.Fungsi.pdb
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\bin\Debug\Elliteserv.Fungsi.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\ResolveAssemblyReference.cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.Resources.resources
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.vbproj.GenerateResource.Cache
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.dll
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.xml
+D:\GITHUB\MPOS\Frameworks\Elliteserv.SQLServer\obj\Debug\Elliteserv.SQLServer.pdb

@@ -22,6 +22,7 @@ BEGIN
 	DECLARE @TotalQtyBeli AS NUMERIC(18,2)
 	DECLARE @HPP AS Money, @HPPSebelum AS Money, @IDTransaksi AS BIGINT
 	DECLARE @HargaBeli AS Money, @HargaBeliSebelum AS Money
+	DECLARE @DataTerakhir AS BIT
 
 	INSERT INTO @TableTemp 
 	SELECT NoID, CONVERT(DATE, Tanggal), IDBarang, SaldoAkhir, HargaBeliTerakhir, HargaJualTerakhir, TotalQtyBeli, IDJenisTransaksi
@@ -121,7 +122,27 @@ BEGIN
 		--Update Ke Master Barang
 		IF @IDJenisTransaksi = 1
 		BEGIN
-			EXEC SP_UpdateBarangDariPembelian @IDTransaksi, 0
+			SELECT @Dataterakhir = CASE WHEN COUNT(NoID) >= 1 THEN 0 ELSE 1 END
+			FROM HKartuStok
+			WHERE IDJenisTransaksi = 1 AND IDTransaksi > @IDTransaksi AND IDBarang = @IDBarang
+			GROUP BY IDJenisTransaksi, IDTransaksi
+
+			IF ISNULL(@DataTerakhir,1) = 1
+			BEGIN
+				UPDATE HBarang SET 
+				HPP=HBeliD.Jumlah/HBeliD.Qty, 
+				IDSatuanBeli=HBeliD.IDSatuan, 
+				KonversiBeli=HBeliD.Konversi, 
+				HargaBeli=HBeliD.Jumlah/HBeliD.Qty, 
+				HargaBeliNetto=HBeliD.Jumlah/HBeliD.Qty*HBeliD.Konversi, 
+				KonversiJual=HBeliD.Konversi, 
+				HargaJual=HBeliD.Jumlah/HBeliD.Qty*(1+(MarkUp/100)),
+				IDUserLastUpdate=0, 
+				LastUpdate=GETDATE()
+				FROM HBarang 
+				INNER JOIN HBeliD ON HBeliD.IDBarang=HBarang.NoID 
+				WHERE HBeliD.IDHeader=@IDTransaksi AND HBeliD.IDBarang = @IDBarang
+			END
 		END
 
 		-- Teori Dwi Salah Kaprah Bikin Mummet

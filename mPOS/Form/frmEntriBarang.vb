@@ -370,4 +370,16 @@ Public Class frmEntriBarang
     Private Sub txtHargaJual_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtHargaJual.EditValueChanged
         HitungProsenByHargaJual()
     End Sub
+
+    Private Sub txtIDSupplier1_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtIDSupplier1.EditValueChanged
+
+    End Sub
+
+    Private Sub txtIDSatuanBeli_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtIDSatuanBeli.EditValueChanged
+        Try
+            txtIDSatuanJual.EditValue = txtIDSatuanBeli.EditValue
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

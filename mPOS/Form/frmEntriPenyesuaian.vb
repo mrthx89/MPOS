@@ -229,10 +229,10 @@ Public Class frmEntriPenyesuaian
                               " WHERE HPenyesuaianD.IDHeader=" & NoID
                         EksekusiSQL(SQL)
 
-                        'Update Ke Master Barang
-                        SQL = "UPDATE HBarang SET HPP=HPenyesuaianD.HargaPokok, IDUserLastUpdate=" & IDUserAktif & ", LastUpdate=GETDATE()" & vbCrLf & _
-                              " FROM HBarang INNER JOIN HPenyesuaianD ON HPenyesuaianD.IDBarang=HBarang.NoID WHERE HPenyesuaianD.IDHeader=" & NoID
-                        EksekusiSQL(SQL)
+                        ''Update Ke Master Barang
+                        'SQL = "UPDATE HBarang SET HPP=HPenyesuaianD.HargaPokok, IDUserLastUpdate=" & IDUserAktif & ", LastUpdate=GETDATE()" & vbCrLf & _
+                        '      " FROM HBarang INNER JOIN HPenyesuaianD ON HPenyesuaianD.IDBarang=HBarang.NoID WHERE HPenyesuaianD.IDHeader=" & NoID
+                        'EksekusiSQL(SQL)
 
                         pStatus = Status.Baru
                         DialogResult = Windows.Forms.DialogResult.OK

@@ -259,10 +259,13 @@ Public Class frmEntriBeli
                               " WHERE HBeliD.IDHeader=" & NoID
                         EksekusiSQL(SQL)
 
+                        ''Update Ke Master Barang
+                        'SQL = "UPDATE HBarang SET HPP=HBeliD.Jumlah/HBeliD.Qty, IDSatuanBeli=HBeliD.IDSatuan, KonversiBeli=HBeliD.Konversi, HargaBeli=HBeliD.Jumlah/HBeliD.Qty, HargaBeliNetto=HBeliD.Jumlah/HBeliD.Qty*HBeliD.Konversi, IDUserLastUpdate=" & IDUserAktif & ", LastUpdate=GETDATE()" & vbCrLf & _
+                        '      " FROM HBarang INNER JOIN HBeliD ON HBeliD.IDBarang=HBarang.NoID WHERE HBeliD.IDHeader=" & NoID
+                        'EksekusiSQL(SQL)
+
                         'Update Ke Master Barang
-                        SQL = "UPDATE HBarang SET HPP=HBeliD.Jumlah/HBeliD.Qty, IDSatuanBeli=HBeliD.IDSatuan, KonversiBeli=HBeliD.Konversi, HargaBeli=HBeliD.Jumlah/HBeliD.Qty, HargaBeliNetto=HBeliD.Jumlah/HBeliD.Qty*HBeliD.Konversi, IDUserLastUpdate=" & IDUserAktif & ", LastUpdate=GETDATE()" & vbCrLf & _
-                              " FROM HBarang INNER JOIN HBeliD ON HBeliD.IDBarang=HBarang.NoID WHERE HBeliD.IDHeader=" & NoID
-                        EksekusiSQL(SQL)
+                        SQL = "EXEC SP_UpdateBarangDariPembelian " & NoID & ", " & IDUserAktif
 
                         pStatus = Status.Baru
                         DialogResult = Windows.Forms.DialogResult.OK

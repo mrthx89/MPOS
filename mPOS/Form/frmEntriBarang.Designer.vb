@@ -20,6 +20,7 @@ Partial Class frmEntriBarang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl
+        Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit
         Me.cmdClose = New DevExpress.XtraEditors.SimpleButton
         Me.cmdSave = New DevExpress.XtraEditors.SimpleButton
         Me.txtBarcode = New DevExpress.XtraEditors.TextEdit
@@ -55,19 +56,6 @@ Partial Class frmEntriBarang
         Me.ItemForKonversiJual = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup
         Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.LayoutControlGroup5 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.ItemForIDSupplier1 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.ItemForIDSatuanBeli = New DevExpress.XtraLayout.LayoutControlItem
-        Me.ItemForHargaBeli = New DevExpress.XtraLayout.LayoutControlItem
-        Me.ItemForKonversiBeli = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlGroup6 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.ItemForIDSatuanJual = New DevExpress.XtraLayout.LayoutControlItem
-        Me.ItemForMarkUp = New DevExpress.XtraLayout.LayoutControlItem
-        Me.ItemForHargaJual = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem
-        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem
         Me.TabbedControlGroup1 = New DevExpress.XtraLayout.TabbedControlGroup
         Me.LayoutControlGroup4 = New DevExpress.XtraLayout.LayoutControlGroup
         Me.ItemForIDKategori = New DevExpress.XtraLayout.LayoutControlItem
@@ -81,10 +69,23 @@ Partial Class frmEntriBarang
         Me.ItemForQtyMin = New DevExpress.XtraLayout.LayoutControlItem
         Me.ItemForAlias = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlGroup7 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup
+        Me.LayoutControlGroup5 = New DevExpress.XtraLayout.LayoutControlGroup
+        Me.ItemForIDSupplier1 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.ItemForIDSatuanBeli = New DevExpress.XtraLayout.LayoutControlItem
+        Me.ItemForHargaBeli = New DevExpress.XtraLayout.LayoutControlItem
+        Me.ItemForKonversiBeli = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlGroup6 = New DevExpress.XtraLayout.LayoutControlGroup
+        Me.ItemForIDSatuanJual = New DevExpress.XtraLayout.LayoutControlItem
+        Me.ItemForMarkUp = New DevExpress.XtraLayout.LayoutControlItem
+        Me.ItemForHargaJual = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem
+        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
+        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtBarcode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtKode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtNama.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,19 +119,6 @@ Partial Class frmEntriBarang
         CType(Me.ItemForKonversiJual, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForIDSupplier1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForIDSatuanBeli, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForHargaBeli, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForKonversiBeli, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForIDSatuanJual, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForMarkUp, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ItemForHargaJual, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ItemForIDKategori, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,8 +132,20 @@ Partial Class frmEntriBarang
         CType(Me.ItemForQtyMin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ItemForAlias, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForIDSupplier1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForIDSatuanBeli, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForHargaBeli, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForKonversiBeli, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForIDSatuanJual, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForMarkUp, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ItemForHargaJual, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -183,6 +183,17 @@ Partial Class frmEntriBarang
         Me.LayoutControl1.Size = New System.Drawing.Size(711, 436)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
+        '
+        'PictureEdit1
+        '
+        Me.PictureEdit1.Location = New System.Drawing.Point(24, 44)
+        Me.PictureEdit1.Name = "PictureEdit1"
+        Me.PictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.PictureEdit1.Properties.Appearance.Options.UseBackColor = True
+        Me.PictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze
+        Me.PictureEdit1.Size = New System.Drawing.Size(663, 203)
+        Me.PictureEdit1.StyleController = Me.LayoutControl1
+        Me.PictureEdit1.TabIndex = 8
         '
         'cmdClose
         '
@@ -616,138 +627,6 @@ Partial Class frmEntriBarang
         Me.LayoutControlGroup2.Size = New System.Drawing.Size(691, 251)
         Me.LayoutControlGroup2.Text = "autoGeneratedGroup0"
         '
-        'LayoutControlGroup3
-        '
-        Me.LayoutControlGroup3.AllowDrawBackground = False
-        Me.LayoutControlGroup3.CustomizationFormText = "autoGeneratedGroup1"
-        Me.LayoutControlGroup3.GroupBordersVisible = False
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup5, Me.LayoutControlGroup6, Me.LayoutControlItem1, Me.EmptySpaceItem1, Me.LayoutControlItem2})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 251)
-        Me.LayoutControlGroup3.Name = "autoGeneratedGroup1"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(691, 165)
-        Me.LayoutControlGroup3.Text = "autoGeneratedGroup1"
-        '
-        'LayoutControlGroup5
-        '
-        Me.LayoutControlGroup5.CustomizationFormText = "Harga Beli"
-        Me.LayoutControlGroup5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSupplier1, Me.ItemForIDSatuanBeli, Me.ItemForHargaBeli, Me.ItemForKonversiBeli})
-        Me.LayoutControlGroup5.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup5.Name = "LayoutControlGroup5"
-        Me.LayoutControlGroup5.Size = New System.Drawing.Size(343, 122)
-        Me.LayoutControlGroup5.Text = "Harga Beli"
-        '
-        'ItemForIDSupplier1
-        '
-        Me.ItemForIDSupplier1.Control = Me.txtIDSupplier1
-        Me.ItemForIDSupplier1.CustomizationFormText = "ID Supplier1"
-        Me.ItemForIDSupplier1.Location = New System.Drawing.Point(0, 0)
-        Me.ItemForIDSupplier1.Name = "ItemForIDSupplier1"
-        Me.ItemForIDSupplier1.Size = New System.Drawing.Size(319, 26)
-        Me.ItemForIDSupplier1.Text = "Supplier"
-        Me.ItemForIDSupplier1.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'ItemForIDSatuanBeli
-        '
-        Me.ItemForIDSatuanBeli.Control = Me.txtIDSatuanBeli
-        Me.ItemForIDSatuanBeli.CustomizationFormText = "ID Satuan Beli"
-        Me.ItemForIDSatuanBeli.Location = New System.Drawing.Point(0, 26)
-        Me.ItemForIDSatuanBeli.Name = "ItemForIDSatuanBeli"
-        Me.ItemForIDSatuanBeli.Size = New System.Drawing.Size(159, 26)
-        Me.ItemForIDSatuanBeli.Text = "Satuan Beli"
-        Me.ItemForIDSatuanBeli.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'ItemForHargaBeli
-        '
-        Me.ItemForHargaBeli.Control = Me.txtHargaBeli
-        Me.ItemForHargaBeli.CustomizationFormText = "Harga Beli"
-        Me.ItemForHargaBeli.Location = New System.Drawing.Point(0, 52)
-        Me.ItemForHargaBeli.Name = "ItemForHargaBeli"
-        Me.ItemForHargaBeli.Size = New System.Drawing.Size(319, 26)
-        Me.ItemForHargaBeli.Text = "Harga Beli"
-        Me.ItemForHargaBeli.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'ItemForKonversiBeli
-        '
-        Me.ItemForKonversiBeli.Control = Me.txtKonversiBeli
-        Me.ItemForKonversiBeli.CustomizationFormText = "Konversi Beli"
-        Me.ItemForKonversiBeli.Location = New System.Drawing.Point(159, 26)
-        Me.ItemForKonversiBeli.Name = "ItemForKonversiBeli"
-        Me.ItemForKonversiBeli.Size = New System.Drawing.Size(160, 26)
-        Me.ItemForKonversiBeli.Text = "Konversi Beli"
-        Me.ItemForKonversiBeli.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'LayoutControlGroup6
-        '
-        Me.LayoutControlGroup6.CustomizationFormText = "Harga Jual"
-        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSatuanJual, Me.ItemForMarkUp, Me.ItemForHargaJual})
-        Me.LayoutControlGroup6.Location = New System.Drawing.Point(343, 0)
-        Me.LayoutControlGroup6.Name = "LayoutControlGroup6"
-        Me.LayoutControlGroup6.Size = New System.Drawing.Size(348, 122)
-        Me.LayoutControlGroup6.Text = "Harga Jual"
-        '
-        'ItemForIDSatuanJual
-        '
-        Me.ItemForIDSatuanJual.Control = Me.txtIDSatuanJual
-        Me.ItemForIDSatuanJual.CustomizationFormText = "ID Satuan Jual"
-        Me.ItemForIDSatuanJual.Location = New System.Drawing.Point(0, 0)
-        Me.ItemForIDSatuanJual.Name = "ItemForIDSatuanJual"
-        Me.ItemForIDSatuanJual.Size = New System.Drawing.Size(324, 26)
-        Me.ItemForIDSatuanJual.Text = "Satuan Jual"
-        Me.ItemForIDSatuanJual.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'ItemForMarkUp
-        '
-        Me.ItemForMarkUp.Control = Me.txtMarkUp
-        Me.ItemForMarkUp.CustomizationFormText = "Mark Up"
-        Me.ItemForMarkUp.Location = New System.Drawing.Point(0, 26)
-        Me.ItemForMarkUp.Name = "ItemForMarkUp"
-        Me.ItemForMarkUp.Size = New System.Drawing.Size(324, 26)
-        Me.ItemForMarkUp.Text = "Mark Up"
-        Me.ItemForMarkUp.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'ItemForHargaJual
-        '
-        Me.ItemForHargaJual.Control = Me.txtHargaJual
-        Me.ItemForHargaJual.CustomizationFormText = "Harga Jual"
-        Me.ItemForHargaJual.Location = New System.Drawing.Point(0, 52)
-        Me.ItemForHargaJual.Name = "ItemForHargaJual"
-        Me.ItemForHargaJual.Size = New System.Drawing.Size(324, 26)
-        Me.ItemForHargaJual.Text = "Harga Jual"
-        Me.ItemForHargaJual.TextSize = New System.Drawing.Size(60, 13)
-        '
-        'LayoutControlItem1
-        '
-        Me.LayoutControlItem1.Control = Me.cmdSave
-        Me.LayoutControlItem1.CustomizationFormText = "LayoutControlItem1"
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 137)
-        Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(346, 28)
-        Me.LayoutControlItem1.Text = "LayoutControlItem1"
-        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem1.TextToControlDistance = 0
-        Me.LayoutControlItem1.TextVisible = False
-        '
-        'EmptySpaceItem1
-        '
-        Me.EmptySpaceItem1.CustomizationFormText = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Location = New System.Drawing.Point(0, 122)
-        Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(691, 15)
-        Me.EmptySpaceItem1.Text = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.Control = Me.cmdClose
-        Me.LayoutControlItem2.CustomizationFormText = "LayoutControlItem2"
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(346, 137)
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(345, 28)
-        Me.LayoutControlItem2.Text = "LayoutControlItem2"
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem2.TextToControlDistance = 0
-        Me.LayoutControlItem2.TextVisible = False
-        '
         'TabbedControlGroup1
         '
         Me.TabbedControlGroup1.CustomizationFormText = "TabbedControlGroup1"
@@ -881,17 +760,6 @@ Partial Class frmEntriBarang
         Me.LayoutControlGroup7.Size = New System.Drawing.Size(667, 207)
         Me.LayoutControlGroup7.Text = "Foto"
         '
-        'PictureEdit1
-        '
-        Me.PictureEdit1.Location = New System.Drawing.Point(24, 44)
-        Me.PictureEdit1.Name = "PictureEdit1"
-        Me.PictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.PictureEdit1.Properties.Appearance.Options.UseBackColor = True
-        Me.PictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze
-        Me.PictureEdit1.Size = New System.Drawing.Size(663, 203)
-        Me.PictureEdit1.StyleController = Me.LayoutControl1
-        Me.PictureEdit1.TabIndex = 8
-        '
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.PictureEdit1
@@ -904,6 +772,138 @@ Partial Class frmEntriBarang
         Me.LayoutControlItem3.TextToControlDistance = 0
         Me.LayoutControlItem3.TextVisible = False
         '
+        'LayoutControlGroup3
+        '
+        Me.LayoutControlGroup3.AllowDrawBackground = False
+        Me.LayoutControlGroup3.CustomizationFormText = "autoGeneratedGroup1"
+        Me.LayoutControlGroup3.GroupBordersVisible = False
+        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup5, Me.LayoutControlGroup6, Me.LayoutControlItem1, Me.EmptySpaceItem1, Me.LayoutControlItem2})
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 251)
+        Me.LayoutControlGroup3.Name = "autoGeneratedGroup1"
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(691, 165)
+        Me.LayoutControlGroup3.Text = "autoGeneratedGroup1"
+        '
+        'LayoutControlGroup5
+        '
+        Me.LayoutControlGroup5.CustomizationFormText = "Harga Beli"
+        Me.LayoutControlGroup5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSupplier1, Me.ItemForIDSatuanBeli, Me.ItemForHargaBeli, Me.ItemForKonversiBeli})
+        Me.LayoutControlGroup5.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup5.Name = "LayoutControlGroup5"
+        Me.LayoutControlGroup5.Size = New System.Drawing.Size(343, 122)
+        Me.LayoutControlGroup5.Text = "Harga Beli"
+        '
+        'ItemForIDSupplier1
+        '
+        Me.ItemForIDSupplier1.Control = Me.txtIDSupplier1
+        Me.ItemForIDSupplier1.CustomizationFormText = "ID Supplier1"
+        Me.ItemForIDSupplier1.Location = New System.Drawing.Point(0, 0)
+        Me.ItemForIDSupplier1.Name = "ItemForIDSupplier1"
+        Me.ItemForIDSupplier1.Size = New System.Drawing.Size(319, 26)
+        Me.ItemForIDSupplier1.Text = "Supplier"
+        Me.ItemForIDSupplier1.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'ItemForIDSatuanBeli
+        '
+        Me.ItemForIDSatuanBeli.Control = Me.txtIDSatuanBeli
+        Me.ItemForIDSatuanBeli.CustomizationFormText = "ID Satuan Beli"
+        Me.ItemForIDSatuanBeli.Location = New System.Drawing.Point(0, 26)
+        Me.ItemForIDSatuanBeli.Name = "ItemForIDSatuanBeli"
+        Me.ItemForIDSatuanBeli.Size = New System.Drawing.Size(159, 26)
+        Me.ItemForIDSatuanBeli.Text = "Satuan Beli"
+        Me.ItemForIDSatuanBeli.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'ItemForHargaBeli
+        '
+        Me.ItemForHargaBeli.Control = Me.txtHargaBeli
+        Me.ItemForHargaBeli.CustomizationFormText = "Harga Beli"
+        Me.ItemForHargaBeli.Location = New System.Drawing.Point(0, 52)
+        Me.ItemForHargaBeli.Name = "ItemForHargaBeli"
+        Me.ItemForHargaBeli.Size = New System.Drawing.Size(319, 26)
+        Me.ItemForHargaBeli.Text = "Harga Beli"
+        Me.ItemForHargaBeli.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'ItemForKonversiBeli
+        '
+        Me.ItemForKonversiBeli.Control = Me.txtKonversiBeli
+        Me.ItemForKonversiBeli.CustomizationFormText = "Konversi Beli"
+        Me.ItemForKonversiBeli.Location = New System.Drawing.Point(159, 26)
+        Me.ItemForKonversiBeli.Name = "ItemForKonversiBeli"
+        Me.ItemForKonversiBeli.Size = New System.Drawing.Size(160, 26)
+        Me.ItemForKonversiBeli.Text = "Konversi Beli"
+        Me.ItemForKonversiBeli.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'LayoutControlGroup6
+        '
+        Me.LayoutControlGroup6.CustomizationFormText = "Harga Jual"
+        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSatuanJual, Me.ItemForMarkUp, Me.ItemForHargaJual})
+        Me.LayoutControlGroup6.Location = New System.Drawing.Point(343, 0)
+        Me.LayoutControlGroup6.Name = "LayoutControlGroup6"
+        Me.LayoutControlGroup6.Size = New System.Drawing.Size(348, 122)
+        Me.LayoutControlGroup6.Text = "Harga Jual"
+        '
+        'ItemForIDSatuanJual
+        '
+        Me.ItemForIDSatuanJual.Control = Me.txtIDSatuanJual
+        Me.ItemForIDSatuanJual.CustomizationFormText = "ID Satuan Jual"
+        Me.ItemForIDSatuanJual.Location = New System.Drawing.Point(0, 0)
+        Me.ItemForIDSatuanJual.Name = "ItemForIDSatuanJual"
+        Me.ItemForIDSatuanJual.Size = New System.Drawing.Size(324, 26)
+        Me.ItemForIDSatuanJual.Text = "Satuan Jual"
+        Me.ItemForIDSatuanJual.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'ItemForMarkUp
+        '
+        Me.ItemForMarkUp.Control = Me.txtMarkUp
+        Me.ItemForMarkUp.CustomizationFormText = "Mark Up"
+        Me.ItemForMarkUp.Location = New System.Drawing.Point(0, 26)
+        Me.ItemForMarkUp.Name = "ItemForMarkUp"
+        Me.ItemForMarkUp.Size = New System.Drawing.Size(324, 26)
+        Me.ItemForMarkUp.Text = "Mark Up"
+        Me.ItemForMarkUp.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'ItemForHargaJual
+        '
+        Me.ItemForHargaJual.Control = Me.txtHargaJual
+        Me.ItemForHargaJual.CustomizationFormText = "Harga Jual"
+        Me.ItemForHargaJual.Location = New System.Drawing.Point(0, 52)
+        Me.ItemForHargaJual.Name = "ItemForHargaJual"
+        Me.ItemForHargaJual.Size = New System.Drawing.Size(324, 26)
+        Me.ItemForHargaJual.Text = "Harga Jual"
+        Me.ItemForHargaJual.TextSize = New System.Drawing.Size(60, 13)
+        '
+        'LayoutControlItem1
+        '
+        Me.LayoutControlItem1.Control = Me.cmdSave
+        Me.LayoutControlItem1.CustomizationFormText = "LayoutControlItem1"
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 137)
+        Me.LayoutControlItem1.Name = "LayoutControlItem1"
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(346, 28)
+        Me.LayoutControlItem1.Text = "LayoutControlItem1"
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem1.TextToControlDistance = 0
+        Me.LayoutControlItem1.TextVisible = False
+        '
+        'EmptySpaceItem1
+        '
+        Me.EmptySpaceItem1.CustomizationFormText = "EmptySpaceItem1"
+        Me.EmptySpaceItem1.Location = New System.Drawing.Point(0, 122)
+        Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(691, 15)
+        Me.EmptySpaceItem1.Text = "EmptySpaceItem1"
+        Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.Control = Me.cmdClose
+        Me.LayoutControlItem2.CustomizationFormText = "LayoutControlItem2"
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(346, 137)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(345, 28)
+        Me.LayoutControlItem2.Text = "LayoutControlItem2"
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem2.TextToControlDistance = 0
+        Me.LayoutControlItem2.TextVisible = False
+        '
         'frmEntriBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -914,6 +914,7 @@ Partial Class frmEntriBarang
         Me.Text = "Entri Master Barang"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtBarcode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtKode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtNama.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -947,19 +948,6 @@ Partial Class frmEntriBarang
         CType(Me.ItemForKonversiJual, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForIDSupplier1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForIDSatuanBeli, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForHargaBeli, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForKonversiBeli, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForIDSatuanJual, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForMarkUp, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ItemForHargaJual, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ItemForIDKategori, System.ComponentModel.ISupportInitialize).EndInit()
@@ -973,8 +961,20 @@ Partial Class frmEntriBarang
         CType(Me.ItemForQtyMin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ItemForAlias, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForIDSupplier1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForIDSatuanBeli, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForHargaBeli, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForKonversiBeli, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForIDSatuanJual, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForMarkUp, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ItemForHargaJual, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

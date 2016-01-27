@@ -482,6 +482,27 @@ Public Class frmUtama
                     End If
                     frmEntri.Show()
                     frmEntri.Focus()
+                Case "DaftarPembayaranPiutang".ToLower
+                    Dim frmEntri As frmDaftarTransaksi = Nothing
+                    Dim F As Object
+                    For Each F In MdiChildren
+                        If TypeOf F Is frmDaftarTransaksi AndAlso F.name = "frm" & NullToStr(Str(0)) Then
+                            frmEntri = F
+                            Exit For
+                        End If
+                    Next
+                    If frmEntri Is Nothing Then
+                        frmEntri = New frmDaftarTransaksi
+                        frmEntri.Judul = NullToStr(Str(2)).ToUpper
+                        frmEntri.QueryString = ""
+                        frmEntri.NamaTabel = "HBayarPiutang"
+                        frmEntri.FormName = "frm" & NullToStr(Str(0))
+                        frmEntri.Name = frmEntri.FormName.ToUpper
+                        frmEntri.WindowState = FormWindowState.Maximized
+                        frmEntri.MdiParent = Me
+                    End If
+                    frmEntri.Show()
+                    frmEntri.Focus()
                 Case "DaftarSatuan".ToLower
                     Dim frmEntri As frmDaftarMaster = Nothing
                     Dim F As Object

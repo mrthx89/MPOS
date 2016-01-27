@@ -56,6 +56,13 @@ Public Class frmDaftarTransaksi
         'Dim oDA As New SqlDataAdapter
         Try
             Select Case FormName.ToLower
+                Case "frmDaftarPembayaranPiutang".ToLower
+                    SQL = "SELECT HBayarPiutang.*, HCustomer.Nama AS Customer, HUserEntri.Nama AS UserEntri, HUserEdit.Nama AS UserEdit" & vbCrLf & _
+                          " FROM HBayarPiutang" & vbCrLf & _
+                          " INNER JOIN HKontak AS HCustomer ON dbo.HBayarPiutang.IDCustomer = HCustomer.NoID" & vbCrLf & _
+                          " LEFT JOIN dbo.HUser AS HUserEntri ON dbo.HBayarPiutang.IDUserEntri = HUserEntri.NoID" & vbCrLf & _
+                          " LEFT JOIN dbo.HUser AS HUserEdit ON dbo.HBayarPiutang.IDUserEdit = HUserEdit.NoID" & vbCrLf & _
+                          " WHERE 1=1 "
                 Case "frmDaftarTukarPoin".ToLower
                     SQL = "SELECT HTukarPoin.*, HKontak.Kode + ' - ' + HKontak.Nama AS Customer FROM HTukarPoin LEFT JOIN HKontak ON HKontak.NoID=HTukarPoin.IDCustomer WHERE 1=1 "
                 Case "frmDaftarPembelian".ToLower

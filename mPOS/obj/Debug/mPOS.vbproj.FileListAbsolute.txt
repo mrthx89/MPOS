@@ -117,7 +117,8 @@ D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmLogin.resources
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmUtama.resources
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.Resources.resources
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.vbproj.GenerateResource.Cache
-D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.exe.licenses
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.exe
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.xml
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.pdb
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmEntriPembayaranPiutang.resources
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.exe.licenses

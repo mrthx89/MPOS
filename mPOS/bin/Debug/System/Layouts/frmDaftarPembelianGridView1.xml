@@ -37,7 +37,7 @@
     <property name="Item6" isnull="true" iskey="true">
       <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
-      <property name="Width">40</property>
+      <property name="Width">93</property>
       <property name="Name">colReff</property>
     </property>
     <property name="Item7" isnull="true" iskey="true">

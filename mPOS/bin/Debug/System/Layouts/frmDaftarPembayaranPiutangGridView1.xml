@@ -36,6 +36,13 @@
     <property name="Item8" isnull="true" iskey="true">
       <property name="VisibleIndex">6</property>
       <property name="Visible">true</property>
+      <property name="Width">105</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">SUM={0:n2}</property>
+        <property name="FieldName">Total</property>
+        <property name="Tag" isnull="true" />
+      </property>
       <property name="Name">colTotal</property>
     </property>
     <property name="Item9" isnull="true" iskey="true">

@@ -306,8 +306,8 @@ Public Class frmEntriJual
                         SQL = "DELETE FROM [HKartuStok] WHERE IDJenisTransaksi=2 AND IDTransaksi=" & NoID
                         EksekusiSQL(SQL)
 
-                        SQL = "INSERT INTO [HKartuStok] ([IDKontak],[KodeReff],[Tanggal],[IDJenisTransaksi],[IDTransaksi],[IDBarang],[IDSatuan],[QtyMasuk],[QtyKeluar],[Konversi],[HPP],[HargaBeliTerakhir]) " & vbCrLf & _
-                              " SELECT HJual.IDCustomer, HJual.Kode, HJual.Tanggal, 2 AS IDJenisTransaksi, HJual.NoID, HJualD.IDBarang, HJualD.IDSatuan, 0 AS QtyMasuk, HJualD.Qty AS QtyKeluar, HJualD.Konversi, HJualD.Harga, HJualD.Harga " & vbCrLf & _
+                        SQL = "INSERT INTO [HKartuStok] ([IDKontak],[KodeReff],[Tanggal],[IDJenisTransaksi],[IDTransaksi],[IDBarang],[IDSatuan],[QtyMasuk],[QtyKeluar],[Konversi],[HPP],[HargaBeliTerakhir],[HargaJualTerakhir]) " & vbCrLf & _
+                              " SELECT HJual.IDCustomer, HJual.Kode, HJual.Tanggal, 2 AS IDJenisTransaksi, HJual.NoID, HJualD.IDBarang, HJualD.IDSatuan, 0 AS QtyMasuk, HJualD.Qty AS QtyKeluar, HJualD.Konversi, HJualD.Harga, HJualD.Harga, HJualD.Harga" & vbCrLf & _
                               " FROM HJualD INNER JOIN HJual ON HJual.NoID=HJualD.IDHeader " & vbCrLf & _
                               " WHERE HJualD.IDHeader=" & NoID
                         EksekusiSQL(SQL)

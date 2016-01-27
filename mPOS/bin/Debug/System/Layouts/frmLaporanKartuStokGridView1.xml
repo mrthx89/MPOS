@@ -1,7 +1,7 @@
 ﻿<XtraSerializer version="1.0" application="View">
   <property name="#LayoutVersion" />
   <property name="ActiveFilterEnabled">true</property>
-  <property name="Columns" iskey="true" value="23">
+  <property name="Columns" iskey="true" value="25">
     <property name="Item1" isnull="true" iskey="true">
       <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
@@ -105,6 +105,8 @@
       <property name="Name">colKonversi</property>
     </property>
     <property name="Item18" isnull="true" iskey="true">
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
       <property name="Width">63</property>
       <property name="Name">colHPP</property>
     </property>
@@ -130,6 +132,13 @@
     </property>
     <property name="Item23" isnull="true" iskey="true">
       <property name="Name">colSaldoAkhir1</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Name">colTotalQtyBeli</property>
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Width">130</property>
+      <property name="Name">colHargaJualTerakhir</property>
     </property>
   </property>
   <property name="OptionsView" isnull="true" iskey="true">

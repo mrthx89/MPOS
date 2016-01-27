@@ -223,9 +223,9 @@ Public Class frmEntriPenyesuaian
                         SQL = "DELETE FROM [HKartuStok] WHERE IDJenisTransaksi=5 AND IDTransaksi=" & NoID
                         EksekusiSQL(SQL)
 
-                        SQL = "INSERT INTO [HKartuStok] ([IDKontak],[KodeReff],[Tanggal],[IDJenisTransaksi],[IDTransaksi],[IDBarang],[IDSatuan],[QtyMasuk],[QtyKeluar],[Konversi],[HPP],[HargaBeliTerakhir]) " & vbCrLf & _
-                              " SELECT " & IDUserAktif & ", HPenyesuaian.Kode, HPenyesuaian.Tanggal, 5 AS IDJenisTransaksi, HPenyesuaian.NoID, HPenyesuaianD.IDBarang, HPenyesuaianD.IDSatuan, HPenyesuaianD.Qty AS QtyMasuk, 0 AS QtyKeluar, HPenyesuaianD.Konversi, HPenyesuaianD.HargaPokok, HPenyesuaianD.HargaPokok " & vbCrLf & _
-                              " FROM HPenyesuaianD INNER JOIN HPenyesuaian ON HPenyesuaian.NoID=HPenyesuaianD.IDHeader " & vbCrLf & _
+                        SQL = "INSERT INTO [HKartuStok] ([IDKontak],[KodeReff],[Tanggal],[IDJenisTransaksi],[IDTransaksi],[IDBarang],[IDSatuan],[QtyMasuk],[QtyKeluar],[Konversi],[HPP],[HargaBeliTerakhir],[HargaJualTerakhir]) " & vbCrLf & _
+                              " SELECT " & IDUserAktif & ", HPenyesuaian.Kode, HPenyesuaian.Tanggal, 5 AS IDJenisTransaksi, HPenyesuaian.NoID, HPenyesuaianD.IDBarang, HPenyesuaianD.IDSatuan, HPenyesuaianD.Qty AS QtyMasuk, 0 AS QtyKeluar, HPenyesuaianD.Konversi, HPenyesuaianD.HargaPokok, HPenyesuaianD.HargaPokok, HBarang.HargaJual " & vbCrLf & _
+                              " FROM HPenyesuaianD INNER JOIN HPenyesuaian ON HPenyesuaian.NoID=HPenyesuaianD.IDHeader INNER JOIN HBarang ON HBarang.NoID=HPenyesuaianD.IDBarang " & vbCrLf & _
                               " WHERE HPenyesuaianD.IDHeader=" & NoID
                         EksekusiSQL(SQL)
 

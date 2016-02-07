@@ -81,7 +81,7 @@
     <property name="Item13" isnull="true" iskey="true">
       <property name="VisibleIndex">3</property>
       <property name="Visible">true</property>
-      <property name="Width">65</property>
+      <property name="Width">79</property>
       <property name="Name">colCustomer</property>
     </property>
     <property name="Item14" isnull="true" iskey="true">

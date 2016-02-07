@@ -20,6 +20,10 @@ Partial Class frmEntriJual
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl
+        Me.txtSisa = New DevExpress.XtraEditors.TextEdit
+        Me.txtBayar = New DevExpress.XtraEditors.TextEdit
+        Me.txtSalesOrder = New DevExpress.XtraEditors.SearchLookUpEdit
+        Me.GridView3 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.txtSalesman = New DevExpress.XtraEditors.SearchLookUpEdit
         Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.txtKeterangan = New DevExpress.XtraEditors.MemoEdit
@@ -58,18 +62,18 @@ Partial Class frmEntriJual
         Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.txtSalesOrder = New DevExpress.XtraEditors.SearchLookUpEdit
-        Me.GridView3 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.txtBayar = New DevExpress.XtraEditors.TextEdit
         Me.LayoutControlItem19 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.txtSisa = New DevExpress.XtraEditors.TextEdit
         Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
+        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSalesOrder.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSalesman.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtKeterangan.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,16 +108,12 @@ Partial Class frmEntriJual
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSalesOrder.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -146,6 +146,63 @@ Partial Class frmEntriJual
         Me.LayoutControl1.Size = New System.Drawing.Size(1053, 497)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
+        '
+        'txtSisa
+        '
+        Me.txtSisa.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.txtSisa.EnterMoveNextControl = True
+        Me.txtSisa.Location = New System.Drawing.Point(917, 435)
+        Me.txtSisa.Name = "txtSisa"
+        Me.txtSisa.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSisa.Properties.Appearance.Options.UseFont = True
+        Me.txtSisa.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
+        Me.txtSisa.Properties.Mask.EditMask = "n2"
+        Me.txtSisa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtSisa.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtSisa.Properties.ReadOnly = True
+        Me.txtSisa.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtSisa.Size = New System.Drawing.Size(124, 22)
+        Me.txtSisa.StyleController = Me.LayoutControl1
+        Me.txtSisa.TabIndex = 19
+        '
+        'txtBayar
+        '
+        Me.txtBayar.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.txtBayar.EnterMoveNextControl = True
+        Me.txtBayar.Location = New System.Drawing.Point(917, 409)
+        Me.txtBayar.Name = "txtBayar"
+        Me.txtBayar.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBayar.Properties.Appearance.Options.UseFont = True
+        Me.txtBayar.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
+        Me.txtBayar.Properties.Mask.EditMask = "n2"
+        Me.txtBayar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtBayar.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtBayar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtBayar.Size = New System.Drawing.Size(124, 22)
+        Me.txtBayar.StyleController = Me.LayoutControl1
+        Me.txtBayar.TabIndex = 19
+        '
+        'txtSalesOrder
+        '
+        Me.txtSalesOrder.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.txtSalesOrder.EnterMoveNextControl = True
+        Me.txtSalesOrder.Location = New System.Drawing.Point(124, 383)
+        Me.txtSalesOrder.Name = "txtSalesOrder"
+        Me.txtSalesOrder.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSalesOrder.Properties.Appearance.Options.UseFont = True
+        Me.txtSalesOrder.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo), New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.txtSalesOrder.Properties.NullText = ""
+        Me.txtSalesOrder.Properties.View = Me.GridView3
+        Me.txtSalesOrder.Size = New System.Drawing.Size(244, 22)
+        Me.txtSalesOrder.StyleController = Me.LayoutControl1
+        Me.txtSalesOrder.TabIndex = 8
+        '
+        'GridView3
+        '
+        Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.GridView3.Name = "GridView3"
+        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView3.OptionsView.ShowGroupPanel = False
         '
         'txtSalesman
         '
@@ -613,19 +670,6 @@ Partial Class frmEntriJual
         Me.LayoutControlItem15.TextToControlDistance = 0
         Me.LayoutControlItem15.TextVisible = False
         '
-        'LayoutControlItem16
-        '
-        Me.LayoutControlItem16.Control = Me.txtKeterangan
-        Me.LayoutControlItem16.CustomizationFormText = "Keterangan"
-        Me.LayoutControlItem16.Location = New System.Drawing.Point(0, 397)
-        Me.LayoutControlItem16.MaxSize = New System.Drawing.Size(360, 0)
-        Me.LayoutControlItem16.MinSize = New System.Drawing.Size(360, 22)
-        Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(360, 52)
-        Me.LayoutControlItem16.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem16.Text = "Keterangan"
-        Me.LayoutControlItem16.TextSize = New System.Drawing.Size(108, 13)
-        '
         'LayoutControlItem6
         '
         Me.LayoutControlItem6.Control = Me.txtJatuhTempo
@@ -646,28 +690,6 @@ Partial Class frmEntriJual
         Me.LayoutControlItem17.Text = "Salesman"
         Me.LayoutControlItem17.TextSize = New System.Drawing.Size(108, 13)
         '
-        'txtSalesOrder
-        '
-        Me.txtSalesOrder.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtSalesOrder.EnterMoveNextControl = True
-        Me.txtSalesOrder.Location = New System.Drawing.Point(124, 383)
-        Me.txtSalesOrder.Name = "txtSalesOrder"
-        Me.txtSalesOrder.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSalesOrder.Properties.Appearance.Options.UseFont = True
-        Me.txtSalesOrder.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo), New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.txtSalesOrder.Properties.NullText = ""
-        Me.txtSalesOrder.Properties.View = Me.GridView3
-        Me.txtSalesOrder.Size = New System.Drawing.Size(244, 22)
-        Me.txtSalesOrder.StyleController = Me.LayoutControl1
-        Me.txtSalesOrder.TabIndex = 8
-        '
-        'GridView3
-        '
-        Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView3.Name = "GridView3"
-        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView3.OptionsView.ShowGroupPanel = False
-        '
         'LayoutControlItem18
         '
         Me.LayoutControlItem18.Control = Me.txtSalesOrder
@@ -677,23 +699,6 @@ Partial Class frmEntriJual
         Me.LayoutControlItem18.Size = New System.Drawing.Size(360, 26)
         Me.LayoutControlItem18.Text = "Load Data Sales Order"
         Me.LayoutControlItem18.TextSize = New System.Drawing.Size(108, 13)
-        '
-        'txtBayar
-        '
-        Me.txtBayar.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtBayar.EnterMoveNextControl = True
-        Me.txtBayar.Location = New System.Drawing.Point(917, 409)
-        Me.txtBayar.Name = "txtBayar"
-        Me.txtBayar.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBayar.Properties.Appearance.Options.UseFont = True
-        Me.txtBayar.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
-        Me.txtBayar.Properties.Mask.EditMask = "n2"
-        Me.txtBayar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtBayar.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.txtBayar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtBayar.Size = New System.Drawing.Size(124, 22)
-        Me.txtBayar.StyleController = Me.LayoutControl1
-        Me.txtBayar.TabIndex = 19
         '
         'LayoutControlItem19
         '
@@ -705,24 +710,6 @@ Partial Class frmEntriJual
         Me.LayoutControlItem19.Text = "Bayar"
         Me.LayoutControlItem19.TextSize = New System.Drawing.Size(108, 13)
         '
-        'txtSisa
-        '
-        Me.txtSisa.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtSisa.EnterMoveNextControl = True
-        Me.txtSisa.Location = New System.Drawing.Point(917, 435)
-        Me.txtSisa.Name = "txtSisa"
-        Me.txtSisa.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSisa.Properties.Appearance.Options.UseFont = True
-        Me.txtSisa.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
-        Me.txtSisa.Properties.Mask.EditMask = "n2"
-        Me.txtSisa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtSisa.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.txtSisa.Properties.ReadOnly = True
-        Me.txtSisa.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtSisa.Size = New System.Drawing.Size(124, 22)
-        Me.txtSisa.StyleController = Me.LayoutControl1
-        Me.txtSisa.TabIndex = 19
-        '
         'LayoutControlItem20
         '
         Me.LayoutControlItem20.Control = Me.txtSisa
@@ -732,6 +719,19 @@ Partial Class frmEntriJual
         Me.LayoutControlItem20.Size = New System.Drawing.Size(240, 26)
         Me.LayoutControlItem20.Text = "Sisa"
         Me.LayoutControlItem20.TextSize = New System.Drawing.Size(108, 13)
+        '
+        'LayoutControlItem16
+        '
+        Me.LayoutControlItem16.Control = Me.txtKeterangan
+        Me.LayoutControlItem16.CustomizationFormText = "Keterangan"
+        Me.LayoutControlItem16.Location = New System.Drawing.Point(0, 397)
+        Me.LayoutControlItem16.MaxSize = New System.Drawing.Size(360, 0)
+        Me.LayoutControlItem16.MinSize = New System.Drawing.Size(360, 22)
+        Me.LayoutControlItem16.Name = "LayoutControlItem16"
+        Me.LayoutControlItem16.Size = New System.Drawing.Size(360, 52)
+        Me.LayoutControlItem16.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+        Me.LayoutControlItem16.Text = "Keterangan"
+        Me.LayoutControlItem16.TextSize = New System.Drawing.Size(108, 13)
         '
         'frmEntriJual
         '
@@ -745,6 +745,10 @@ Partial Class frmEntriJual
         Me.Text = "Entri Penjualan Customer"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtSalesOrder.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSalesman.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtKeterangan.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -779,16 +783,12 @@ Partial Class frmEntriJual
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSalesOrder.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

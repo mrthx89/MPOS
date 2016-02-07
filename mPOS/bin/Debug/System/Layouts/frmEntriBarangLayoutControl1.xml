@@ -323,7 +323,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@1,Y=0</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -357,7 +357,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtIDKategori</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -371,7 +371,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@2,Y=26</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -405,7 +405,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtKode</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -419,7 +419,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@2,Y=52</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -453,7 +453,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtBarcode</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -467,7 +467,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@2,Y=78</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -501,7 +501,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtNama</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -515,7 +515,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@3,Y=130</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -549,7 +549,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtKeterangan</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -659,7 +659,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@3,Y=104</property>
       <property name="Size">@3,Width=429@2,Height=26</property>
@@ -693,7 +693,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtAlias</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -707,7 +707,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=238@3,Y=156</property>
       <property name="Size">@3,Width=172@2,Height=26</property>
@@ -741,7 +741,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtQtyMin</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -755,7 +755,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=410@3,Y=156</property>
       <property name="Size">@3,Width=257@2,Height=26</property>
@@ -789,7 +789,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtQtyMax</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1061,7 +1061,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@1,Y=0</property>
       <property name="Size">@3,Width=319@2,Height=26</property>
@@ -1095,7 +1095,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtIDSupplier1</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1109,7 +1109,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@2,Y=26</property>
       <property name="Size">@3,Width=159@2,Height=26</property>
@@ -1143,7 +1143,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtIDSatuanBeli</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1157,7 +1157,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@2,Y=52</property>
       <property name="Size">@3,Width=319@2,Height=26</property>
@@ -1191,7 +1191,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtHargaBeli</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1201,11 +1201,11 @@
     <property name="Item20" isnull="true" iskey="true">
       <property name="ParentName">LayoutControlGroup5</property>
       <property name="CustomizationFormText">Konversi Beli</property>
-      <property name="Text">Konversi Beli</property>
+      <property name="Text">Isi Karton</property>
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=159@2,Y=26</property>
       <property name="Size">@3,Width=160@2,Height=26</property>
@@ -1239,7 +1239,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtKonversiBeli</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1358,10 +1358,10 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@1,Y=0</property>
-      <property name="Size">@3,Width=324@2,Height=26</property>
+      <property name="Size">@3,Width=162@2,Height=26</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -1392,7 +1392,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtIDSatuanJual</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1406,7 +1406,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@2,Y=26</property>
       <property name="Size">@3,Width=324@2,Height=26</property>
@@ -1440,7 +1440,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtMarkUp</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1454,7 +1454,7 @@
       <property name="TextVisible">true</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=117@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@2,Y=52</property>
       <property name="Size">@3,Width=324@2,Height=26</property>
@@ -1488,7 +1488,7 @@
       <property name="TypeName">LayoutControlItem</property>
       <property name="ControlName">txtHargaJual</property>
       <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=60@2,Height=13</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />
@@ -1496,6 +1496,54 @@
       <property name="TextLocation">Left</property>
     </property>
     <property name="Item25" isnull="true" iskey="true">
+      <property name="ParentName">LayoutControlGroup6</property>
+      <property name="CustomizationFormText">Konversi Jual</property>
+      <property name="Text">Konversi Jual</property>
+      <property name="TextVisible">true</property>
+      <property name="ImageToTextDistance">5</property>
+      <property name="MaxSize">@1,Width=0@2,Height=26</property>
+      <property name="MinSize">@3,Width=120@2,Height=26</property>
+      <property name="ShowInCustomizationForm">true</property>
+      <property name="Location">@3,X=162@1,Y=0</property>
+      <property name="Size">@3,Width=162@2,Height=26</property>
+      <property name="AppearanceItemCaption" isnull="true" iskey="true">
+        <property name="Font">Tahoma, 8.25pt</property>
+        <property name="BackColor2" />
+        <property name="BackColor" />
+        <property name="ForeColor" />
+        <property name="BorderColor" />
+        <property name="GradientMode">Horizontal</property>
+      </property>
+      <property name="OptionsCustomization" isnull="true" iskey="true">
+        <property name="AllowDrop">Default</property>
+        <property name="AllowDrag">Default</property>
+      </property>
+      <property name="OptionsToolTip" isnull="true" iskey="true">
+        <property name="IconToolTipTitle" />
+        <property name="IconToolTipIconType">None</property>
+        <property name="EnableIconToolTip">true</property>
+        <property name="IconToolTip" />
+        <property name="ToolTip" />
+        <property name="ToolTipTitle" />
+        <property name="ToolTipIconType">None</property>
+      </property>
+      <property name="ImageAlignment">MiddleLeft</property>
+      <property name="Padding">2, 2, 2, 2</property>
+      <property name="TextAlignMode">UseParentOptions</property>
+      <property name="Spacing">0, 0, 0, 0</property>
+      <property name="AllowHtmlStringInCaption">false</property>
+      <property name="Name">ItemForKonversiJual</property>
+      <property name="TypeName">LayoutControlItem</property>
+      <property name="ControlName">txtKonversiJual</property>
+      <property name="SizeConstraintsType">Default</property>
+      <property name="TextSize">@2,Width=63@2,Height=13</property>
+      <property name="Visibility">Always</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Image" isnull="true" />
+      <property name="TextToControlDistance">3</property>
+      <property name="TextLocation">Left</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
       <property name="ParentName">autoGeneratedGroup1</property>
       <property name="CustomizationFormText">LayoutControlItem1</property>
       <property name="Text">LayoutControlItem1</property>
@@ -1543,7 +1591,7 @@
       <property name="TextToControlDistance">0</property>
       <property name="TextLocation">Left</property>
     </property>
-    <property name="Item26" isnull="true" iskey="true">
+    <property name="Item27" isnull="true" iskey="true">
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -1591,7 +1639,7 @@
       <property name="SizeConstraintsType">Default</property>
       <property name="Image" isnull="true" />
     </property>
-    <property name="Item27" isnull="true" iskey="true">
+    <property name="Item28" isnull="true" iskey="true">
       <property name="ParentName">autoGeneratedGroup1</property>
       <property name="CustomizationFormText">LayoutControlItem2</property>
       <property name="Text">LayoutControlItem2</property>
@@ -1639,7 +1687,7 @@
       <property name="TextToControlDistance">0</property>
       <property name="TextLocation">Left</property>
     </property>
-    <property name="Item28" isnull="true" iskey="true">
+    <property name="Item29" isnull="true" iskey="true">
       <property name="ParentName">Customization</property>
       <property name="CustomizationFormText">Harga Beli Netto</property>
       <property name="Text">Harga Beli Netto</property>
@@ -1687,7 +1735,7 @@
       <property name="TextToControlDistance">5</property>
       <property name="TextLocation">Left</property>
     </property>
-    <property name="Item29" isnull="true" iskey="true">
+    <property name="Item30" isnull="true" iskey="true">
       <property name="ParentName">Customization</property>
       <property name="CustomizationFormText">ID Supplier3</property>
       <property name="Text">Supplier 3</property>
@@ -1735,7 +1783,7 @@
       <property name="TextToControlDistance">5</property>
       <property name="TextLocation">Left</property>
     </property>
-    <property name="Item30" isnull="true" iskey="true">
+    <property name="Item31" isnull="true" iskey="true">
       <property name="ParentName">Customization</property>
       <property name="CustomizationFormText">ID Supplier2</property>
       <property name="Text">Supplier 2</property>
@@ -1777,54 +1825,6 @@
       <property name="ControlName">txtIDSupplier2</property>
       <property name="SizeConstraintsType">Default</property>
       <property name="TextSize">@2,Width=78@2,Height=13</property>
-      <property name="Visibility">Always</property>
-      <property name="ImageIndex">-1</property>
-      <property name="Image" isnull="true" />
-      <property name="TextToControlDistance">5</property>
-      <property name="TextLocation">Left</property>
-    </property>
-    <property name="Item31" isnull="true" iskey="true">
-      <property name="ParentName">Customization</property>
-      <property name="CustomizationFormText">Konversi Jual</property>
-      <property name="Text">Konversi Jual</property>
-      <property name="TextVisible">true</property>
-      <property name="ImageToTextDistance">5</property>
-      <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@3,Width=122@2,Height=26</property>
-      <property name="ShowInCustomizationForm">true</property>
-      <property name="Location">@3,X=163@1,Y=0</property>
-      <property name="Size">@3,Width=161@2,Height=26</property>
-      <property name="AppearanceItemCaption" isnull="true" iskey="true">
-        <property name="Font">Tahoma, 8.25pt</property>
-        <property name="BackColor2" />
-        <property name="BackColor" />
-        <property name="ForeColor" />
-        <property name="BorderColor" />
-        <property name="GradientMode">Horizontal</property>
-      </property>
-      <property name="OptionsCustomization" isnull="true" iskey="true">
-        <property name="AllowDrop">Default</property>
-        <property name="AllowDrag">Default</property>
-      </property>
-      <property name="OptionsToolTip" isnull="true" iskey="true">
-        <property name="IconToolTipTitle" />
-        <property name="IconToolTipIconType">None</property>
-        <property name="EnableIconToolTip">true</property>
-        <property name="IconToolTip" />
-        <property name="ToolTip" />
-        <property name="ToolTipTitle" />
-        <property name="ToolTipIconType">None</property>
-      </property>
-      <property name="ImageAlignment">MiddleLeft</property>
-      <property name="Padding">2, 2, 2, 2</property>
-      <property name="TextAlignMode">UseParentOptions</property>
-      <property name="Spacing">0, 0, 0, 0</property>
-      <property name="AllowHtmlStringInCaption">false</property>
-      <property name="Name">ItemForKonversiJual</property>
-      <property name="TypeName">LayoutControlItem</property>
-      <property name="ControlName">txtKonversiJual</property>
-      <property name="SizeConstraintsType">Default</property>
-      <property name="TextSize">@2,Width=63@2,Height=13</property>
       <property name="Visibility">Always</property>
       <property name="ImageIndex">-1</property>
       <property name="Image" isnull="true" />

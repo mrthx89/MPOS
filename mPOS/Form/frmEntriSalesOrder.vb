@@ -44,7 +44,7 @@ Public Class frmEntriSalesOrder
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        pStatus = IsBaru
+        pStatus = IIf(IsBaru = Status.Baru, Status.Baru, Status.Edit)
     End Sub
 
     Private Sub SetTombol()

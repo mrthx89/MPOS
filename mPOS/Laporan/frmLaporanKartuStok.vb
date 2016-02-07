@@ -73,7 +73,7 @@ Public Class frmLaporanKartuStok
         Dim SaldoAwal As Double = 0
         Dim SaldoAkhir As Double = 0
         Try
-            SQL = "SELECT HBarang.Kode, HBarang.Barcode, HBarang.Nama, HKartuStok.QtyMasuk*HKartuStok.Konversi AS QtyMasukPcs, HKartuStok.QtyKeluar*HKartuStok.Konversi AS QtyKeluarPcs, HJenisTransaksi.Nama AS JenisTransaksi, HKartuStok.*, HSatuan.Kode AS Satuan, 0 AS SaldoAwal, 0 AS SaldoAkhir" & vbCrLf & _
+            SQL = "SELECT HBarang.Kode, HBarang.Barcode, HBarang.Nama, HKartuStok.QtyMasuk*HKartuStok.Konversi AS QtyMasukPcs, HKartuStok.QtyKeluar*HKartuStok.Konversi AS QtyKeluarPcs, HJenisTransaksi.Nama AS JenisTransaksi, HKartuStok.HargaBeliTerakhir/HKartuStok.Konversi AS HargaBeliTerakhir, HKartuStok.HargaJualTerakhir AS HargaJualTerakhir, HSatuan.Kode AS Satuan, 0 AS SaldoAwal, 0 AS SaldoAkhir" & vbCrLf & _
                   " FROM HKartuStok " & vbCrLf & _
                   " INNER JOIN HBarang ON HBarang.NoID=HKartuStok.IDBarang " & vbCrLf & _
                   " INNER JOIN HJenisTransaksi ON HJenisTransaksi.NoID=HKartuStok.IDJenisTransaksi " & vbCrLf & _

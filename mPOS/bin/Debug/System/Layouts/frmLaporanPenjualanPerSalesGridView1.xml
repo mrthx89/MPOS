@@ -27,13 +27,13 @@
     <property name="Item5" isnull="true" iskey="true">
       <property name="VisibleIndex">3</property>
       <property name="Visible">true</property>
-      <property name="Width">113</property>
+      <property name="Width">108</property>
       <property name="Name">colNama</property>
     </property>
     <property name="Item6" isnull="true" iskey="true">
       <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
-      <property name="Width">76</property>
+      <property name="Width">132</property>
       <property name="Name">colKategori</property>
     </property>
     <property name="Item7" isnull="true" iskey="true">
@@ -45,7 +45,13 @@
     <property name="Item8" isnull="true" iskey="true">
       <property name="VisibleIndex">6</property>
       <property name="Visible">true</property>
-      <property name="Width">63</property>
+      <property name="Width">114</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">SUM={0:n2}</property>
+        <property name="FieldName">Total</property>
+        <property name="Tag" isnull="true" />
+      </property>
       <property name="Name">colTotal</property>
     </property>
   </property>

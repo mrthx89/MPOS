@@ -87,10 +87,34 @@
     <Compile Include="Aplikasi\frmSettingDatabase.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\frmEntriPembayaranPiutang.Designer.vb">
+      <DependentUpon>frmEntriPembayaranPiutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmEntriPembayaranPiutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDaftarMasterBarang.Designer.vb">
       <DependentUpon>frmDaftarMasterBarang.vb</DependentUpon>
     </Compile>
     <Compile Include="frmDaftarMasterBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanSalesOrderDetil.Designer.vb">
+      <DependentUpon>frmLaporanSalesOrderDetil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanSalesOrderDetil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanSaldoPiutang.Designer.vb">
+      <DependentUpon>frmLaporanSaldoPiutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanSaldoPiutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanAgingPiutang.Designer.vb">
+      <DependentUpon>frmLaporanAgingPiutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanAgingPiutang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\frmLaporanPembelianDetil.Designer.vb">
@@ -293,8 +317,24 @@
       <DependentUpon>frmSettingDatabase.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEntriPembayaranPiutang.resx">
+      <DependentUpon>frmEntriPembayaranPiutang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDaftarMasterBarang.resx">
       <DependentUpon>frmDaftarMasterBarang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLaporanSalesOrderDetil.resx">
+      <DependentUpon>frmLaporanSalesOrderDetil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLaporanSaldoPiutang.resx">
+      <DependentUpon>frmLaporanSaldoPiutang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLaporanAgingPiutang.resx">
+      <DependentUpon>frmLaporanAgingPiutang.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\frmLaporanPembelianDetil.resx">

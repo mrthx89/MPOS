@@ -121,3 +121,7 @@ D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.exe
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.xml
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.pdb
 D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.exe.licenses
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmEntriPembayaranPiutang.resources
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmLaporanSaldoPiutang.resources
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmLaporanAgingPiutang.resources
+D:\GITHUB\MPOS\mPOS\obj\Debug\mPOS.frmLaporanSalesOrderDetil.resources

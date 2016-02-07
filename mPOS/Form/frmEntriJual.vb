@@ -50,7 +50,7 @@ Public Class frmEntriJual
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        pStatus = IsBaru
+        pStatus = IIf(IsBaru = Status.Baru, Status.Baru, Status.Edit)
     End Sub
 
     Private Sub SetTombol()
@@ -134,8 +134,8 @@ Public Class frmEntriJual
                     KodeLama = txtKode.Text
                     txtReff.Text = NullToStr(ds.Tables("Data").Rows(0).Item("Reff"))
                     txtKeterangan.Text = NullToStr(ds.Tables("Data").Rows(0).Item("Keterangan"))
-                    txtSalesman.EditValue = NullToLong(ds.Tables("Data").Rows(0).Item("IDSalesman"))
                     txtIDCustomer.EditValue = NullToLong(ds.Tables("Data").Rows(0).Item("IDCustomer"))
+                    txtSalesman.EditValue = NullToLong(ds.Tables("Data").Rows(0).Item("IDSalesman"))
                     txtTanggal.DateTime = NullToDate(ds.Tables("Data").Rows(0).Item("Tanggal"))
                     txtJatuhTempo.DateTime = NullToDate(ds.Tables("Data").Rows(0).Item("TglTempo"))
                     txtTotal.EditValue = NullToDbl(ds.Tables("Data").Rows(0).Item("Total"))

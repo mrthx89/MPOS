@@ -77,7 +77,9 @@ Public Class frmLaporanSaldoStok
         Try
             SQL = "SELECT HBarang.*, HSupplier1.Nama AS Supplier1, HSupplier2.Nama AS Supplier2, HSupplier3.Nama AS Supplier3, HKategori.Nama AS Kategori, " & vbCrLf & _
                   " HSatuan.Kode AS Satuan, " & vbCrLf & _
-                  " ISNULL((SELECT SUM((HKartuStok.QtyMasuk-HKartuStok.QtyKeluar)*HKartuStok.Konversi) FROM HKartuStok WHERE HKartuStok.IDBarang=HBarang.NoID AND HKartuStok.Tanggal<'" & DateEdit1.DateTime.AddDays(1).ToString("yyyy-MM-dd") & "'),0) AS TotalQty " & vbCrLf & _
+                  " ISNULL((SELECT SUM((HKartuStok.QtyMasuk-HKartuStok.QtyKeluar)*HKartuStok.Konversi) FROM HKartuStok WHERE HKartuStok.IDBarang=HBarang.NoID AND HKartuStok.Tanggal<'" & DateEdit1.DateTime.AddDays(1).ToString("yyyy-MM-dd") & "'),0) AS TotalQty, " & vbCrLf & _
+                  " ISNULL((SELECT TOP 1 HargaBeliTerakhir/Konversi FROM HKartuStok WHERE HKartuStok.IDBarang=HBarang.NoID AND HKartuStok.Tanggal<'" & DateEdit1.DateTime.AddDays(1).ToString("yyyy-MM-dd") & "' ORDER BY CONVERT(DATE, HKartuStok.Tanggal), HKartuStok.IDJenisTransaksi, HKartuStok.IDTransaksi),0) AS HBTerakhir, " & vbCrLf & _
+                  " ISNULL((SELECT TOP 1 HargaJualTerakhir FROM HKartuStok WHERE HKartuStok.IDBarang=HBarang.NoID AND HKartuStok.Tanggal<'" & DateEdit1.DateTime.AddDays(1).ToString("yyyy-MM-dd") & "' ORDER BY CONVERT(DATE, HKartuStok.Tanggal), HKartuStok.IDJenisTransaksi, HKartuStok.IDTransaksi),0) AS HJTerakhir " & vbCrLf & _
                   " FROM HBarang" & vbCrLf & _
                   " LEFT JOIN HKategori ON HKategori.NoID=HBarang.IDKategori" & vbCrLf & _
                   " LEFT JOIN HKontak HSupplier1 ON HSupplier1.NoID=HBarang.IDSupplier1" & vbCrLf & _
@@ -93,6 +95,8 @@ Public Class frmLaporanSaldoStok
             If txtIDSupplier.Text <> "" Then
                 SQL &= " AND (HBarang.IDSupplier1=" & NullToLong(txtIDSupplier.EditValue) & " OR HBarang.IDSupplier2=" & NullToLong(txtIDSupplier.EditValue) & " OR HBarang.IDSupplier3=" & NullToLong(txtIDSupplier.EditValue) & ")"
             End If
+
+            SQL = "SELECT Source.*, Source.TotalQty*Source.HBTerakhir AS NilaiPersediaan, Source.TotalQty*Source.HJTerakhir AS NilaiJual, Source.TotalQty*Source.HJTerakhir-Source.TotalQty*Source.HBTerakhir AS NilaiLabaKotor FROM (" & SQL & ") AS Source"
 
             EksekusiDataset(ds, "Data", SQL)
 

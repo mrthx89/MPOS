@@ -191,6 +191,60 @@ Public Class frmUtama
         Try
             Str = e.Item.Tag.ToString.Split(":")
             Select Case NullToStr(Str(0)).ToLower 'Object To Run
+                Case "laporansomenggantung".ToLower
+                    Dim frmEntri As frmLaporanSalesOrderDetil = Nothing
+                    Dim F As Object
+                    For Each F In MdiChildren
+                        If TypeOf F Is frmLaporanSalesOrderDetil Then
+                            frmEntri = F
+                            Exit For
+                        End If
+                    Next
+                    If frmEntri Is Nothing Then
+                        frmEntri = New frmLaporanSalesOrderDetil
+                        frmEntri.Judul = NullToStr(Str(2)).ToUpper
+                        frmEntri.FormName = "frm" & NullToStr(Str(0))
+                        frmEntri.WindowState = FormWindowState.Maximized
+                        frmEntri.MdiParent = Me
+                    End If
+                    frmEntri.Show()
+                    frmEntri.Focus()
+                Case "LaporanSaldoPiutang".ToLower
+                    Dim frmEntri As frmLaporanSaldoPiutang = Nothing
+                    Dim F As Object
+                    For Each F In MdiChildren
+                        If TypeOf F Is frmLaporanSaldoPiutang Then
+                            frmEntri = F
+                            Exit For
+                        End If
+                    Next
+                    If frmEntri Is Nothing Then
+                        frmEntri = New frmLaporanSaldoPiutang
+                        frmEntri.Judul = NullToStr(Str(2)).ToUpper
+                        frmEntri.FormName = "frm" & NullToStr(Str(0))
+                        frmEntri.WindowState = FormWindowState.Maximized
+                        frmEntri.MdiParent = Me
+                    End If
+                    frmEntri.Show()
+                    frmEntri.Focus()
+                Case "LaporanAgingPiutang".ToLower
+                    Dim frmEntri As frmLaporanAgingPiutang = Nothing
+                    Dim F As Object
+                    For Each F In MdiChildren
+                        If TypeOf F Is frmLaporanAgingPiutang Then
+                            frmEntri = F
+                            Exit For
+                        End If
+                    Next
+                    If frmEntri Is Nothing Then
+                        frmEntri = New frmLaporanAgingPiutang
+                        frmEntri.Judul = NullToStr(Str(2)).ToUpper
+                        frmEntri.FormName = "frm" & NullToStr(Str(0))
+                        frmEntri.WindowState = FormWindowState.Maximized
+                        frmEntri.MdiParent = Me
+                    End If
+                    frmEntri.Show()
+                    frmEntri.Focus()
                 Case "LaporanPembelianDetil".ToLower
                     Dim frmEntri As frmLaporanPembelianDetil = Nothing
                     Dim F As Object

@@ -20,11 +20,18 @@ Partial Class frmEntriPembayaranPiutang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl
+        Me.GCPembayaran = New DevExpress.XtraGrid.GridControl
+        Me.GVPembayaran = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.GCNotaKredit = New DevExpress.XtraGrid.GridControl
+        Me.GVNotaKredit = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.GCNotaDebet = New DevExpress.XtraGrid.GridControl
+        Me.GVNotaDebet = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.GCReturJual = New DevExpress.XtraGrid.GridControl
+        Me.GVReturJual = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.txtSisa = New DevExpress.XtraEditors.TextEdit
+        Me.txtBayar = New DevExpress.XtraEditors.TextEdit
         Me.txtKeterangan = New DevExpress.XtraEditors.MemoEdit
         Me.cmdRefresh = New DevExpress.XtraEditors.SimpleButton
-        Me.cmdHapus = New DevExpress.XtraEditors.SimpleButton
-        Me.cmdEdit = New DevExpress.XtraEditors.SimpleButton
-        Me.cmdNew = New DevExpress.XtraEditors.SimpleButton
         Me.cmdSave = New DevExpress.XtraEditors.SimpleButton
         Me.cmdClose = New DevExpress.XtraEditors.SimpleButton
         Me.GCJual = New DevExpress.XtraGrid.GridControl
@@ -38,6 +45,8 @@ Partial Class frmEntriPembayaranPiutang
         Me.txtReff = New DevExpress.XtraEditors.TextEdit
         Me.txtKode = New DevExpress.XtraEditors.TextEdit
         Me.txtAlamatCustomer = New DevExpress.XtraEditors.MemoEdit
+        Me.LayoutControlGroup4 = New DevExpress.XtraLayout.LayoutControlGroup
+        Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem
@@ -50,33 +59,28 @@ Partial Class frmEntriPembayaranPiutang
         Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem
         Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem
         Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem
-        Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.txtSisa = New DevExpress.XtraEditors.TextEdit
         Me.LayoutControlItem19 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.txtBayar = New DevExpress.XtraEditors.TextEdit
-        Me.GCReturJual = New DevExpress.XtraGrid.GridControl
-        Me.GVReturJual = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.GCNotaDebet = New DevExpress.XtraGrid.GridControl
-        Me.GVNotaDebet = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlGroup4 = New DevExpress.XtraLayout.LayoutControlGroup
-        Me.GCNotaKredit = New DevExpress.XtraGrid.GridControl
-        Me.GVNotaKredit = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.GCPembayaran = New DevExpress.XtraGrid.GridControl
-        Me.GVPembayaran = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem22 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
+        CType(Me.GCPembayaran, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GVPembayaran, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GCNotaKredit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GVNotaKredit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GCNotaDebet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GVNotaDebet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GCReturJual, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GVReturJual, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtKeterangan.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GCJual, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GVJual, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,6 +95,8 @@ Partial Class frmEntriPembayaranPiutang
         CType(Me.txtReff.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtKode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtAlamatCustomer.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,27 +109,12 @@ Partial Class frmEntriPembayaranPiutang
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GCReturJual, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GVReturJual, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GCNotaDebet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GVNotaDebet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GCNotaKredit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GVNotaKredit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GCPembayaran, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GVPembayaran, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,9 +131,6 @@ Partial Class frmEntriPembayaranPiutang
         Me.LayoutControl1.Controls.Add(Me.txtBayar)
         Me.LayoutControl1.Controls.Add(Me.txtKeterangan)
         Me.LayoutControl1.Controls.Add(Me.cmdRefresh)
-        Me.LayoutControl1.Controls.Add(Me.cmdHapus)
-        Me.LayoutControl1.Controls.Add(Me.cmdEdit)
-        Me.LayoutControl1.Controls.Add(Me.cmdNew)
         Me.LayoutControl1.Controls.Add(Me.cmdSave)
         Me.LayoutControl1.Controls.Add(Me.cmdClose)
         Me.LayoutControl1.Controls.Add(Me.GCJual)
@@ -164,6 +152,122 @@ Partial Class frmEntriPembayaranPiutang
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
+        'GCPembayaran
+        '
+        Me.GCPembayaran.Location = New System.Drawing.Point(680, 328)
+        Me.GCPembayaran.MainView = Me.GVPembayaran
+        Me.GCPembayaran.Name = "GCPembayaran"
+        Me.GCPembayaran.Size = New System.Drawing.Size(666, 171)
+        Me.GCPembayaran.TabIndex = 23
+        Me.GCPembayaran.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVPembayaran})
+        '
+        'GVPembayaran
+        '
+        Me.GVPembayaran.GridControl = Me.GCPembayaran
+        Me.GVPembayaran.Name = "GVPembayaran"
+        Me.GVPembayaran.OptionsBehavior.AllowIncrementalSearch = True
+        Me.GVPembayaran.OptionsBehavior.Editable = False
+        Me.GVPembayaran.OptionsSelection.MultiSelect = True
+        Me.GVPembayaran.OptionsView.ColumnAutoWidth = False
+        Me.GVPembayaran.OptionsView.ShowFooter = True
+        Me.GVPembayaran.OptionsView.ShowGroupPanel = False
+        '
+        'GCNotaKredit
+        '
+        Me.GCNotaKredit.Location = New System.Drawing.Point(680, 132)
+        Me.GCNotaKredit.MainView = Me.GVNotaKredit
+        Me.GCNotaKredit.Name = "GCNotaKredit"
+        Me.GCNotaKredit.Size = New System.Drawing.Size(666, 176)
+        Me.GCNotaKredit.TabIndex = 22
+        Me.GCNotaKredit.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVNotaKredit})
+        '
+        'GVNotaKredit
+        '
+        Me.GVNotaKredit.GridControl = Me.GCNotaKredit
+        Me.GVNotaKredit.Name = "GVNotaKredit"
+        Me.GVNotaKredit.OptionsBehavior.AllowIncrementalSearch = True
+        Me.GVNotaKredit.OptionsBehavior.Editable = False
+        Me.GVNotaKredit.OptionsSelection.MultiSelect = True
+        Me.GVNotaKredit.OptionsView.ColumnAutoWidth = False
+        Me.GVNotaKredit.OptionsView.ShowFooter = True
+        Me.GVNotaKredit.OptionsView.ShowGroupPanel = False
+        '
+        'GCNotaDebet
+        '
+        Me.GCNotaDebet.Location = New System.Drawing.Point(692, 148)
+        Me.GCNotaDebet.MainView = Me.GVNotaDebet
+        Me.GCNotaDebet.Name = "GCNotaDebet"
+        Me.GCNotaDebet.Size = New System.Drawing.Size(642, 142)
+        Me.GCNotaDebet.TabIndex = 21
+        Me.GCNotaDebet.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVNotaDebet})
+        '
+        'GVNotaDebet
+        '
+        Me.GVNotaDebet.GridControl = Me.GCNotaDebet
+        Me.GVNotaDebet.Name = "GVNotaDebet"
+        Me.GVNotaDebet.OptionsBehavior.AllowIncrementalSearch = True
+        Me.GVNotaDebet.OptionsBehavior.Editable = False
+        Me.GVNotaDebet.OptionsSelection.MultiSelect = True
+        Me.GVNotaDebet.OptionsView.ColumnAutoWidth = False
+        Me.GVNotaDebet.OptionsView.ShowFooter = True
+        Me.GVNotaDebet.OptionsView.ShowGroupPanel = False
+        '
+        'GCReturJual
+        '
+        Me.GCReturJual.Location = New System.Drawing.Point(12, 328)
+        Me.GCReturJual.MainView = Me.GVReturJual
+        Me.GCReturJual.Name = "GCReturJual"
+        Me.GCReturJual.Size = New System.Drawing.Size(664, 171)
+        Me.GCReturJual.TabIndex = 20
+        Me.GCReturJual.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVReturJual})
+        '
+        'GVReturJual
+        '
+        Me.GVReturJual.GridControl = Me.GCReturJual
+        Me.GVReturJual.Name = "GVReturJual"
+        Me.GVReturJual.OptionsBehavior.AllowIncrementalSearch = True
+        Me.GVReturJual.OptionsBehavior.Editable = False
+        Me.GVReturJual.OptionsSelection.MultiSelect = True
+        Me.GVReturJual.OptionsView.ColumnAutoWidth = False
+        Me.GVReturJual.OptionsView.ShowFooter = True
+        Me.GVReturJual.OptionsView.ShowGroupPanel = False
+        '
+        'txtSisa
+        '
+        Me.txtSisa.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.txtSisa.EnterMoveNextControl = True
+        Me.txtSisa.Location = New System.Drawing.Point(1191, 555)
+        Me.txtSisa.Name = "txtSisa"
+        Me.txtSisa.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSisa.Properties.Appearance.Options.UseFont = True
+        Me.txtSisa.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
+        Me.txtSisa.Properties.Mask.EditMask = "n2"
+        Me.txtSisa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtSisa.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtSisa.Properties.ReadOnly = True
+        Me.txtSisa.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtSisa.Size = New System.Drawing.Size(155, 22)
+        Me.txtSisa.StyleController = Me.LayoutControl1
+        Me.txtSisa.TabIndex = 19
+        '
+        'txtBayar
+        '
+        Me.txtBayar.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.txtBayar.EnterMoveNextControl = True
+        Me.txtBayar.Location = New System.Drawing.Point(1191, 529)
+        Me.txtBayar.Name = "txtBayar"
+        Me.txtBayar.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBayar.Properties.Appearance.Options.UseFont = True
+        Me.txtBayar.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
+        Me.txtBayar.Properties.Mask.EditMask = "n2"
+        Me.txtBayar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtBayar.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtBayar.Properties.ReadOnly = True
+        Me.txtBayar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.txtBayar.Size = New System.Drawing.Size(155, 22)
+        Me.txtBayar.StyleController = Me.LayoutControl1
+        Me.txtBayar.TabIndex = 19
+        '
         'txtKeterangan
         '
         Me.txtKeterangan.Location = New System.Drawing.Point(93, 503)
@@ -178,45 +282,12 @@ Partial Class frmEntriPembayaranPiutang
         '
         Me.cmdRefresh.Appearance.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdRefresh.Appearance.Options.UseFont = True
-        Me.cmdRefresh.Location = New System.Drawing.Point(372, 581)
+        Me.cmdRefresh.Location = New System.Drawing.Point(12, 581)
         Me.cmdRefresh.Name = "cmdRefresh"
         Me.cmdRefresh.Size = New System.Drawing.Size(116, 24)
         Me.cmdRefresh.StyleController = Me.LayoutControl1
         Me.cmdRefresh.TabIndex = 5
         Me.cmdRefresh.Text = "&Refresh"
-        '
-        'cmdHapus
-        '
-        Me.cmdHapus.Appearance.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdHapus.Appearance.Options.UseFont = True
-        Me.cmdHapus.Location = New System.Drawing.Point(252, 581)
-        Me.cmdHapus.Name = "cmdHapus"
-        Me.cmdHapus.Size = New System.Drawing.Size(116, 24)
-        Me.cmdHapus.StyleController = Me.LayoutControl1
-        Me.cmdHapus.TabIndex = 5
-        Me.cmdHapus.Text = "&Delete"
-        '
-        'cmdEdit
-        '
-        Me.cmdEdit.Appearance.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdEdit.Appearance.Options.UseFont = True
-        Me.cmdEdit.Location = New System.Drawing.Point(132, 581)
-        Me.cmdEdit.Name = "cmdEdit"
-        Me.cmdEdit.Size = New System.Drawing.Size(116, 24)
-        Me.cmdEdit.StyleController = Me.LayoutControl1
-        Me.cmdEdit.TabIndex = 5
-        Me.cmdEdit.Text = "&Edit"
-        '
-        'cmdNew
-        '
-        Me.cmdNew.Appearance.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNew.Appearance.Options.UseFont = True
-        Me.cmdNew.Location = New System.Drawing.Point(12, 581)
-        Me.cmdNew.Name = "cmdNew"
-        Me.cmdNew.Size = New System.Drawing.Size(116, 24)
-        Me.cmdNew.StyleController = Me.LayoutControl1
-        Me.cmdNew.TabIndex = 4
-        Me.cmdNew.Text = "&New"
         '
         'cmdSave
         '
@@ -388,12 +459,33 @@ Partial Class frmEntriPembayaranPiutang
         Me.txtAlamatCustomer.StyleController = Me.LayoutControl1
         Me.txtAlamatCustomer.TabIndex = 10
         '
+        'LayoutControlGroup4
+        '
+        Me.LayoutControlGroup4.CustomizationFormText = "Nota Debet"
+        Me.LayoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem18})
+        Me.LayoutControlGroup4.Location = New System.Drawing.Point(668, 104)
+        Me.LayoutControlGroup4.Name = "LayoutControlGroup4"
+        Me.LayoutControlGroup4.Size = New System.Drawing.Size(670, 190)
+        Me.LayoutControlGroup4.Text = "Nota Debet"
+        '
+        'LayoutControlItem18
+        '
+        Me.LayoutControlItem18.Control = Me.GCNotaDebet
+        Me.LayoutControlItem18.CustomizationFormText = "Nota Debet"
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem18.Name = "LayoutControlItem18"
+        Me.LayoutControlItem18.Size = New System.Drawing.Size(646, 146)
+        Me.LayoutControlItem18.Text = "Nota Debet"
+        Me.LayoutControlItem18.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem18.TextToControlDistance = 0
+        Me.LayoutControlItem18.TextVisible = False
+        '
         'LayoutControlGroup1
         '
         Me.LayoutControlGroup1.CustomizationFormText = "Root"
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.LayoutControlGroup1.GroupBordersVisible = False
-        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem3, Me.LayoutControlItem2, Me.EmptySpaceItem1, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.EmptySpaceItem3, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.EmptySpaceItem2, Me.LayoutControlItem13, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem6, Me.LayoutControlItem19, Me.LayoutControlItem20, Me.LayoutControlItem16, Me.LayoutControlItem22, Me.LayoutControlItem21, Me.LayoutControlItem9, Me.LayoutControlItem17})
+        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem3, Me.LayoutControlItem2, Me.EmptySpaceItem1, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.EmptySpaceItem3, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.EmptySpaceItem2, Me.LayoutControlItem15, Me.LayoutControlItem6, Me.LayoutControlItem19, Me.LayoutControlItem20, Me.LayoutControlItem16, Me.LayoutControlItem22, Me.LayoutControlItem21, Me.LayoutControlItem9, Me.LayoutControlItem17})
         Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup1.Name = "Root"
         Me.LayoutControlGroup1.Size = New System.Drawing.Size(1358, 617)
@@ -527,69 +619,24 @@ Partial Class frmEntriPembayaranPiutang
         Me.LayoutControlItem11.TextToControlDistance = 0
         Me.LayoutControlItem11.TextVisible = False
         '
-        'LayoutControlItem12
-        '
-        Me.LayoutControlItem12.Control = Me.cmdNew
-        Me.LayoutControlItem12.CustomizationFormText = "LayoutControlItem12"
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(0, 569)
-        Me.LayoutControlItem12.MaxSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem12.MinSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem12.Text = "LayoutControlItem12"
-        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem12.TextToControlDistance = 0
-        Me.LayoutControlItem12.TextVisible = False
-        '
         'EmptySpaceItem2
         '
         Me.EmptySpaceItem2.CustomizationFormText = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Location = New System.Drawing.Point(480, 569)
+        Me.EmptySpaceItem2.Location = New System.Drawing.Point(360, 569)
         Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(618, 28)
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(738, 28)
         Me.EmptySpaceItem2.Text = "EmptySpaceItem2"
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'LayoutControlItem13
-        '
-        Me.LayoutControlItem13.Control = Me.cmdEdit
-        Me.LayoutControlItem13.CustomizationFormText = "LayoutControlItem13"
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(120, 569)
-        Me.LayoutControlItem13.MaxSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem13.MinSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem13.Text = "LayoutControlItem13"
-        Me.LayoutControlItem13.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem13.TextToControlDistance = 0
-        Me.LayoutControlItem13.TextVisible = False
-        '
-        'LayoutControlItem14
-        '
-        Me.LayoutControlItem14.Control = Me.cmdHapus
-        Me.LayoutControlItem14.CustomizationFormText = "LayoutControlItem14"
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(240, 569)
-        Me.LayoutControlItem14.MaxSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem14.MinSize = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(120, 28)
-        Me.LayoutControlItem14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem14.Text = "LayoutControlItem14"
-        Me.LayoutControlItem14.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem14.TextToControlDistance = 0
-        Me.LayoutControlItem14.TextVisible = False
         '
         'LayoutControlItem15
         '
         Me.LayoutControlItem15.Control = Me.cmdRefresh
         Me.LayoutControlItem15.CustomizationFormText = "LayoutControlItem15"
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(360, 569)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 569)
         Me.LayoutControlItem15.MaxSize = New System.Drawing.Size(120, 28)
         Me.LayoutControlItem15.MinSize = New System.Drawing.Size(120, 28)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(120, 28)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(360, 28)
         Me.LayoutControlItem15.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem15.Text = "LayoutControlItem15"
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(0, 0)
@@ -606,6 +653,26 @@ Partial Class frmEntriPembayaranPiutang
         Me.LayoutControlItem6.Text = "Jatuh Tempo"
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(77, 13)
         '
+        'LayoutControlItem19
+        '
+        Me.LayoutControlItem19.Control = Me.txtBayar
+        Me.LayoutControlItem19.CustomizationFormText = "Bayar"
+        Me.LayoutControlItem19.Location = New System.Drawing.Point(1098, 517)
+        Me.LayoutControlItem19.Name = "LayoutControlItem19"
+        Me.LayoutControlItem19.Size = New System.Drawing.Size(240, 26)
+        Me.LayoutControlItem19.Text = "Bayar"
+        Me.LayoutControlItem19.TextSize = New System.Drawing.Size(77, 13)
+        '
+        'LayoutControlItem20
+        '
+        Me.LayoutControlItem20.Control = Me.txtSisa
+        Me.LayoutControlItem20.CustomizationFormText = "Sisa"
+        Me.LayoutControlItem20.Location = New System.Drawing.Point(1098, 543)
+        Me.LayoutControlItem20.Name = "LayoutControlItem20"
+        Me.LayoutControlItem20.Size = New System.Drawing.Size(240, 26)
+        Me.LayoutControlItem20.Text = "Sisa"
+        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(77, 13)
+        '
         'LayoutControlItem16
         '
         Me.LayoutControlItem16.Control = Me.txtKeterangan
@@ -618,163 +685,6 @@ Partial Class frmEntriPembayaranPiutang
         Me.LayoutControlItem16.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem16.Text = "Keterangan"
         Me.LayoutControlItem16.TextSize = New System.Drawing.Size(77, 13)
-        '
-        'LayoutControlItem20
-        '
-        Me.LayoutControlItem20.Control = Me.txtSisa
-        Me.LayoutControlItem20.CustomizationFormText = "Sisa"
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(1098, 543)
-        Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(240, 26)
-        Me.LayoutControlItem20.Text = "Sisa"
-        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(77, 13)
-        '
-        'txtSisa
-        '
-        Me.txtSisa.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtSisa.EnterMoveNextControl = True
-        Me.txtSisa.Location = New System.Drawing.Point(1191, 555)
-        Me.txtSisa.Name = "txtSisa"
-        Me.txtSisa.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSisa.Properties.Appearance.Options.UseFont = True
-        Me.txtSisa.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
-        Me.txtSisa.Properties.Mask.EditMask = "n2"
-        Me.txtSisa.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtSisa.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.txtSisa.Properties.ReadOnly = True
-        Me.txtSisa.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtSisa.Size = New System.Drawing.Size(155, 22)
-        Me.txtSisa.StyleController = Me.LayoutControl1
-        Me.txtSisa.TabIndex = 19
-        '
-        'LayoutControlItem19
-        '
-        Me.LayoutControlItem19.Control = Me.txtBayar
-        Me.LayoutControlItem19.CustomizationFormText = "Bayar"
-        Me.LayoutControlItem19.Location = New System.Drawing.Point(1098, 517)
-        Me.LayoutControlItem19.Name = "LayoutControlItem19"
-        Me.LayoutControlItem19.Size = New System.Drawing.Size(240, 26)
-        Me.LayoutControlItem19.Text = "Bayar"
-        Me.LayoutControlItem19.TextSize = New System.Drawing.Size(77, 13)
-        '
-        'txtBayar
-        '
-        Me.txtBayar.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtBayar.EnterMoveNextControl = True
-        Me.txtBayar.Location = New System.Drawing.Point(1191, 529)
-        Me.txtBayar.Name = "txtBayar"
-        Me.txtBayar.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBayar.Properties.Appearance.Options.UseFont = True
-        Me.txtBayar.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
-        Me.txtBayar.Properties.Mask.EditMask = "n2"
-        Me.txtBayar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtBayar.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.txtBayar.Properties.ReadOnly = True
-        Me.txtBayar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtBayar.Size = New System.Drawing.Size(155, 22)
-        Me.txtBayar.StyleController = Me.LayoutControl1
-        Me.txtBayar.TabIndex = 19
-        '
-        'GCReturJual
-        '
-        Me.GCReturJual.Location = New System.Drawing.Point(12, 328)
-        Me.GCReturJual.MainView = Me.GVReturJual
-        Me.GCReturJual.Name = "GCReturJual"
-        Me.GCReturJual.Size = New System.Drawing.Size(664, 171)
-        Me.GCReturJual.TabIndex = 20
-        Me.GCReturJual.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVReturJual})
-        '
-        'GVReturJual
-        '
-        Me.GVReturJual.GridControl = Me.GCReturJual
-        Me.GVReturJual.Name = "GVReturJual"
-        Me.GVReturJual.OptionsBehavior.AllowIncrementalSearch = True
-        Me.GVReturJual.OptionsBehavior.Editable = False
-        Me.GVReturJual.OptionsSelection.MultiSelect = True
-        Me.GVReturJual.OptionsView.ColumnAutoWidth = False
-        Me.GVReturJual.OptionsView.ShowFooter = True
-        Me.GVReturJual.OptionsView.ShowGroupPanel = False
-        '
-        'GCNotaDebet
-        '
-        Me.GCNotaDebet.Location = New System.Drawing.Point(692, 148)
-        Me.GCNotaDebet.MainView = Me.GVNotaDebet
-        Me.GCNotaDebet.Name = "GCNotaDebet"
-        Me.GCNotaDebet.Size = New System.Drawing.Size(642, 142)
-        Me.GCNotaDebet.TabIndex = 21
-        Me.GCNotaDebet.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVNotaDebet})
-        '
-        'GVNotaDebet
-        '
-        Me.GVNotaDebet.GridControl = Me.GCNotaDebet
-        Me.GVNotaDebet.Name = "GVNotaDebet"
-        Me.GVNotaDebet.OptionsBehavior.AllowIncrementalSearch = True
-        Me.GVNotaDebet.OptionsBehavior.Editable = False
-        Me.GVNotaDebet.OptionsSelection.MultiSelect = True
-        Me.GVNotaDebet.OptionsView.ColumnAutoWidth = False
-        Me.GVNotaDebet.OptionsView.ShowFooter = True
-        Me.GVNotaDebet.OptionsView.ShowGroupPanel = False
-        '
-        'LayoutControlItem18
-        '
-        Me.LayoutControlItem18.Control = Me.GCNotaDebet
-        Me.LayoutControlItem18.CustomizationFormText = "Nota Debet"
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem18.Name = "LayoutControlItem18"
-        Me.LayoutControlItem18.Size = New System.Drawing.Size(646, 146)
-        Me.LayoutControlItem18.Text = "Nota Debet"
-        Me.LayoutControlItem18.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem18.TextToControlDistance = 0
-        Me.LayoutControlItem18.TextVisible = False
-        '
-        'LayoutControlGroup4
-        '
-        Me.LayoutControlGroup4.CustomizationFormText = "Nota Debet"
-        Me.LayoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem18})
-        Me.LayoutControlGroup4.Location = New System.Drawing.Point(668, 104)
-        Me.LayoutControlGroup4.Name = "LayoutControlGroup4"
-        Me.LayoutControlGroup4.Size = New System.Drawing.Size(670, 190)
-        Me.LayoutControlGroup4.Text = "Nota Debet"
-        '
-        'GCNotaKredit
-        '
-        Me.GCNotaKredit.Location = New System.Drawing.Point(680, 132)
-        Me.GCNotaKredit.MainView = Me.GVNotaKredit
-        Me.GCNotaKredit.Name = "GCNotaKredit"
-        Me.GCNotaKredit.Size = New System.Drawing.Size(666, 176)
-        Me.GCNotaKredit.TabIndex = 22
-        Me.GCNotaKredit.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVNotaKredit})
-        '
-        'GVNotaKredit
-        '
-        Me.GVNotaKredit.GridControl = Me.GCNotaKredit
-        Me.GVNotaKredit.Name = "GVNotaKredit"
-        Me.GVNotaKredit.OptionsBehavior.AllowIncrementalSearch = True
-        Me.GVNotaKredit.OptionsBehavior.Editable = False
-        Me.GVNotaKredit.OptionsSelection.MultiSelect = True
-        Me.GVNotaKredit.OptionsView.ColumnAutoWidth = False
-        Me.GVNotaKredit.OptionsView.ShowFooter = True
-        Me.GVNotaKredit.OptionsView.ShowGroupPanel = False
-        '
-        'GCPembayaran
-        '
-        Me.GCPembayaran.Location = New System.Drawing.Point(680, 328)
-        Me.GCPembayaran.MainView = Me.GVPembayaran
-        Me.GCPembayaran.Name = "GCPembayaran"
-        Me.GCPembayaran.Size = New System.Drawing.Size(666, 171)
-        Me.GCPembayaran.TabIndex = 23
-        Me.GCPembayaran.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVPembayaran})
-        '
-        'GVPembayaran
-        '
-        Me.GVPembayaran.GridControl = Me.GCPembayaran
-        Me.GVPembayaran.Name = "GVPembayaran"
-        Me.GVPembayaran.OptionsBehavior.AllowIncrementalSearch = True
-        Me.GVPembayaran.OptionsBehavior.Editable = False
-        Me.GVPembayaran.OptionsSelection.MultiSelect = True
-        Me.GVPembayaran.OptionsView.ColumnAutoWidth = False
-        Me.GVPembayaran.OptionsView.ShowFooter = True
-        Me.GVPembayaran.OptionsView.ShowGroupPanel = False
         '
         'LayoutControlItem22
         '
@@ -832,6 +742,16 @@ Partial Class frmEntriPembayaranPiutang
         Me.Text = "Entri Pembayaran Piutang"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        CType(Me.GCPembayaran, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GVPembayaran, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GCNotaKredit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GVNotaKredit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GCNotaDebet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GVNotaDebet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GCReturJual, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GVReturJual, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtKeterangan.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GCJual, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GVJual, System.ComponentModel.ISupportInitialize).EndInit()
@@ -846,6 +766,8 @@ Partial Class frmEntriPembayaranPiutang
         CType(Me.txtReff.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtKode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtAlamatCustomer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -858,27 +780,12 @@ Partial Class frmEntriPembayaranPiutang
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSisa.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtBayar.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GCReturJual, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GVReturJual, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GCNotaDebet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GVNotaDebet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GCNotaKredit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GVNotaKredit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GCPembayaran, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GVPembayaran, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -913,14 +820,8 @@ Partial Class frmEntriPembayaranPiutang
     Friend WithEvents LayoutControlItem10 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents cmdSave As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LayoutControlItem11 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents cmdNew As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents LayoutControlItem12 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem2 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents cmdRefresh As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents cmdHapus As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents cmdEdit As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents LayoutControlItem13 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem14 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem15 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents txtKeterangan As DevExpress.XtraEditors.MemoEdit
     Friend WithEvents LayoutControlItem16 As DevExpress.XtraLayout.LayoutControlItem

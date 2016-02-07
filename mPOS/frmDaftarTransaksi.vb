@@ -160,6 +160,25 @@ Public Class frmDaftarTransaksi
     Private Sub cmdHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdHapus.Click
         NoID = NullToLong(GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "NoID"))
         Select Case FormName.ToLower
+            Case "frmDaftarPembayaranPiutang".ToLower
+                If NoID >= 1 AndAlso _
+                XtraMessageBox.Show("Yakin ingin menghapus data pembayaran piutang yang dipilih ini?", NamaAplikasi, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
+                    SQL = "DELETE FROM [HBayarPiutang] WHERE NoID=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HBayarPiutangDJual] WHERE IDBayarPiutang=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HBayarPiutangDReturJual] WHERE IDBayarPiutang=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HBayarPiutangDNotaDebet] WHERE IDBayarPiutang=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HBayarPiutangDNotaKredit] WHERE IDBayarPiutang=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HBayarPiutangDPembayaran] WHERE IDBayarPiutang=" & NoID
+                    EksekusiSQL(SQL)
+                    SQL = "DELETE FROM [HKartuPiutang] WHERE IDJenisTransaksi=9 AND IDTransaksi=" & NoID
+                    EksekusiSQL(SQL)
+                    RefreshData()
+                End If
             Case "frmDaftarTukarPoin".ToLower
                 If NoID >= 1 AndAlso _
                 XtraMessageBox.Show("Yakin ingin menghapus data tukar poin yang dipilih ini?", NamaAplikasi, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
@@ -213,6 +232,18 @@ Public Class frmDaftarTransaksi
 
     Private Sub cmdEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdEdit.Click
         Select Case FormName.ToLower
+            Case "frmDaftarPembayaranPiutang".ToLower
+                Dim x As New frmEntriPembayaranPiutang(False)
+                x.NoID = NullToLong(GridView1.GetFocusedRowCellValue(GridView1.Columns("NoID")))
+                x.ShowInTaskbar = False
+                x.StartPosition = FormStartPosition.CenterParent
+                If x.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then
+                    cmdRefresh.PerformClick()
+                    GridView1.ClearSelection()
+                    GridView1.FocusedRowHandle = GridView1.LocateByDisplayText(0, GridView1.Columns("NoID"), x.NoID.ToString("n0"))
+                    GridView1.SelectRow(GridView1.FocusedRowHandle)
+                End If
+                x.Dispose()
             Case "frmDaftarTukarPoin".ToLower
                 Dim x As New frmEntriTukarPoin(False)
                 x.NoID = NullToLong(GridView1.GetFocusedRowCellValue(GridView1.Columns("NoID")))
@@ -295,6 +326,17 @@ Public Class frmDaftarTransaksi
 
     Private Sub cmdBaru_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBaru.Click
         Select Case FormName.ToLower
+            Case "frmDaftarPembayaranPiutang".ToLower
+                Dim x As New frmEntriPembayaranPiutang(True)
+                x.ShowInTaskbar = False
+                x.StartPosition = FormStartPosition.CenterParent
+                If x.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then
+                    cmdRefresh.PerformClick()
+                    GridView1.ClearSelection()
+                    GridView1.FocusedRowHandle = GridView1.LocateByDisplayText(0, GridView1.Columns("NoID"), x.NoID.ToString("n0"))
+                    GridView1.SelectRow(GridView1.FocusedRowHandle)
+                End If
+                x.Dispose()
             Case "frmDaftarTukarPoin".ToLower
                 Dim x As New frmEntriTukarPoin(True)
                 x.ShowInTaskbar = False

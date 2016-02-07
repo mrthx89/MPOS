@@ -305,7 +305,7 @@
       <property name="TextVisible">false</property>
       <property name="ImageToTextDistance">5</property>
       <property name="MaxSize">@1,Width=0@2,Height=26</property>
-      <property name="MinSize">@2,Width=51@2,Height=26</property>
+      <property name="MinSize">@2,Width=52@2,Height=26</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@3,Y=104</property>
       <property name="Size">@3,Width=260@2,Height=26</property>

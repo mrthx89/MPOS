@@ -175,10 +175,10 @@ Partial Class frmEntriBarang
         Me.LayoutControl1.Controls.Add(Me.txtIDSupplier3)
         Me.LayoutControl1.Controls.Add(Me.txtIDSatuanBeli)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl1.HiddenItems.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForHargaBeliNetto, Me.ItemForIDSupplier3, Me.ItemForIDSupplier2, Me.ItemForKonversiJual})
+        Me.LayoutControl1.HiddenItems.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForHargaBeliNetto, Me.ItemForIDSupplier3, Me.ItemForIDSupplier2})
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl1.Name = "LayoutControl1"
-        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(390, 272, 250, 350)
+        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(820, 242, 250, 350)
         Me.LayoutControl1.Root = Me.LayoutControlGroup1
         Me.LayoutControl1.Size = New System.Drawing.Size(711, 436)
         Me.LayoutControl1.TabIndex = 0
@@ -220,55 +220,55 @@ Partial Class frmEntriBarang
         'txtBarcode
         '
         Me.txtBarcode.EnterMoveNextControl = True
-        Me.txtBarcode.Location = New System.Drawing.Point(88, 96)
+        Me.txtBarcode.Location = New System.Drawing.Point(91, 96)
         Me.txtBarcode.Name = "txtBarcode"
         Me.txtBarcode.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBarcode.Properties.Appearance.Options.UseFont = True
-        Me.txtBarcode.Size = New System.Drawing.Size(599, 22)
+        Me.txtBarcode.Size = New System.Drawing.Size(596, 22)
         Me.txtBarcode.StyleController = Me.LayoutControl1
         Me.txtBarcode.TabIndex = 6
         '
         'txtKode
         '
         Me.txtKode.EnterMoveNextControl = True
-        Me.txtKode.Location = New System.Drawing.Point(88, 70)
+        Me.txtKode.Location = New System.Drawing.Point(91, 70)
         Me.txtKode.Name = "txtKode"
         Me.txtKode.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKode.Properties.Appearance.Options.UseFont = True
-        Me.txtKode.Size = New System.Drawing.Size(599, 22)
+        Me.txtKode.Size = New System.Drawing.Size(596, 22)
         Me.txtKode.StyleController = Me.LayoutControl1
         Me.txtKode.TabIndex = 7
         '
         'txtNama
         '
         Me.txtNama.EnterMoveNextControl = True
-        Me.txtNama.Location = New System.Drawing.Point(88, 122)
+        Me.txtNama.Location = New System.Drawing.Point(91, 122)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Properties.Appearance.Options.UseFont = True
-        Me.txtNama.Size = New System.Drawing.Size(599, 22)
+        Me.txtNama.Size = New System.Drawing.Size(596, 22)
         Me.txtNama.StyleController = Me.LayoutControl1
         Me.txtNama.TabIndex = 8
         '
         'txtKeterangan
         '
         Me.txtKeterangan.EnterMoveNextControl = True
-        Me.txtKeterangan.Location = New System.Drawing.Point(88, 174)
+        Me.txtKeterangan.Location = New System.Drawing.Point(91, 174)
         Me.txtKeterangan.Name = "txtKeterangan"
         Me.txtKeterangan.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKeterangan.Properties.Appearance.Options.UseFont = True
-        Me.txtKeterangan.Size = New System.Drawing.Size(599, 22)
+        Me.txtKeterangan.Size = New System.Drawing.Size(596, 22)
         Me.txtKeterangan.StyleController = Me.LayoutControl1
         Me.txtKeterangan.TabIndex = 9
         '
         'txtAlias
         '
         Me.txtAlias.EnterMoveNextControl = True
-        Me.txtAlias.Location = New System.Drawing.Point(88, 148)
+        Me.txtAlias.Location = New System.Drawing.Point(91, 148)
         Me.txtAlias.Name = "txtAlias"
         Me.txtAlias.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlias.Properties.Appearance.Options.UseFont = True
-        Me.txtAlias.Size = New System.Drawing.Size(599, 22)
+        Me.txtAlias.Size = New System.Drawing.Size(596, 22)
         Me.txtAlias.StyleController = Me.LayoutControl1
         Me.txtAlias.TabIndex = 10
         '
@@ -298,14 +298,14 @@ Partial Class frmEntriBarang
         '
         Me.txtIDKategori.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtIDKategori.EnterMoveNextControl = True
-        Me.txtIDKategori.Location = New System.Drawing.Point(88, 44)
+        Me.txtIDKategori.Location = New System.Drawing.Point(91, 44)
         Me.txtIDKategori.Name = "txtIDKategori"
         Me.txtIDKategori.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDKategori.Properties.Appearance.Options.UseFont = True
         Me.txtIDKategori.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtIDKategori.Properties.NullText = ""
         Me.txtIDKategori.Properties.View = Me.SearchLookUpEdit1View
-        Me.txtIDKategori.Size = New System.Drawing.Size(599, 22)
+        Me.txtIDKategori.Size = New System.Drawing.Size(596, 22)
         Me.txtIDKategori.StyleController = Me.LayoutControl1
         Me.txtIDKategori.TabIndex = 5
         '
@@ -320,7 +320,7 @@ Partial Class frmEntriBarang
         '
         Me.txtQtyMax.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtQtyMax.EnterMoveNextControl = True
-        Me.txtQtyMax.Location = New System.Drawing.Point(88, 200)
+        Me.txtQtyMax.Location = New System.Drawing.Point(91, 200)
         Me.txtQtyMax.Name = "txtQtyMax"
         Me.txtQtyMax.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtQtyMax.Properties.Appearance.Options.UseFont = True
@@ -329,7 +329,7 @@ Partial Class frmEntriBarang
         Me.txtQtyMax.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtQtyMax.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtQtyMax.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtQtyMax.Size = New System.Drawing.Size(266, 22)
+        Me.txtQtyMax.Size = New System.Drawing.Size(263, 22)
         Me.txtQtyMax.StyleController = Me.LayoutControl1
         Me.txtQtyMax.TabIndex = 11
         '
@@ -337,7 +337,7 @@ Partial Class frmEntriBarang
         '
         Me.txtQtyMin.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtQtyMin.EnterMoveNextControl = True
-        Me.txtQtyMin.Location = New System.Drawing.Point(422, 200)
+        Me.txtQtyMin.Location = New System.Drawing.Point(425, 200)
         Me.txtQtyMin.Name = "txtQtyMin"
         Me.txtQtyMin.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtQtyMin.Properties.Appearance.Options.UseFont = True
@@ -346,7 +346,7 @@ Partial Class frmEntriBarang
         Me.txtQtyMin.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtQtyMin.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtQtyMin.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtQtyMin.Size = New System.Drawing.Size(265, 22)
+        Me.txtQtyMin.Size = New System.Drawing.Size(262, 22)
         Me.txtQtyMin.StyleController = Me.LayoutControl1
         Me.txtQtyMin.TabIndex = 12
         '
@@ -354,7 +354,7 @@ Partial Class frmEntriBarang
         '
         Me.txtHargaBeli.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtHargaBeli.EnterMoveNextControl = True
-        Me.txtHargaBeli.Location = New System.Drawing.Point(88, 347)
+        Me.txtHargaBeli.Location = New System.Drawing.Point(91, 347)
         Me.txtHargaBeli.Name = "txtHargaBeli"
         Me.txtHargaBeli.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaBeli.Properties.Appearance.Options.UseFont = True
@@ -363,7 +363,7 @@ Partial Class frmEntriBarang
         Me.txtHargaBeli.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtHargaBeli.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtHargaBeli.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtHargaBeli.Size = New System.Drawing.Size(251, 22)
+        Me.txtHargaBeli.Size = New System.Drawing.Size(248, 22)
         Me.txtHargaBeli.StyleController = Me.LayoutControl1
         Me.txtHargaBeli.TabIndex = 17
         '
@@ -371,7 +371,7 @@ Partial Class frmEntriBarang
         '
         Me.txtKonversiBeli.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtKonversiBeli.EnterMoveNextControl = True
-        Me.txtKonversiBeli.Location = New System.Drawing.Point(247, 321)
+        Me.txtKonversiBeli.Location = New System.Drawing.Point(250, 321)
         Me.txtKonversiBeli.Name = "txtKonversiBeli"
         Me.txtKonversiBeli.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKonversiBeli.Properties.Appearance.Options.UseFont = True
@@ -380,7 +380,7 @@ Partial Class frmEntriBarang
         Me.txtKonversiBeli.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtKonversiBeli.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtKonversiBeli.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtKonversiBeli.Size = New System.Drawing.Size(92, 22)
+        Me.txtKonversiBeli.Size = New System.Drawing.Size(89, 22)
         Me.txtKonversiBeli.StyleController = Me.LayoutControl1
         Me.txtKonversiBeli.TabIndex = 18
         '
@@ -405,7 +405,7 @@ Partial Class frmEntriBarang
         '
         Me.txtKonversiJual.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtKonversiJual.EnterMoveNextControl = True
-        Me.txtKonversiJual.Location = New System.Drawing.Point(597, 295)
+        Me.txtKonversiJual.Location = New System.Drawing.Point(596, 295)
         Me.txtKonversiJual.Name = "txtKonversiJual"
         Me.txtKonversiJual.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKonversiJual.Properties.Appearance.Options.UseFont = True
@@ -414,7 +414,7 @@ Partial Class frmEntriBarang
         Me.txtKonversiJual.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtKonversiJual.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtKonversiJual.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtKonversiJual.Size = New System.Drawing.Size(90, 22)
+        Me.txtKonversiJual.Size = New System.Drawing.Size(91, 22)
         Me.txtKonversiJual.StyleController = Me.LayoutControl1
         Me.txtKonversiJual.TabIndex = 23
         '
@@ -422,7 +422,7 @@ Partial Class frmEntriBarang
         '
         Me.txtMarkUp.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtMarkUp.EnterMoveNextControl = True
-        Me.txtMarkUp.Location = New System.Drawing.Point(431, 321)
+        Me.txtMarkUp.Location = New System.Drawing.Point(434, 321)
         Me.txtMarkUp.Name = "txtMarkUp"
         Me.txtMarkUp.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMarkUp.Properties.Appearance.Options.UseFont = True
@@ -431,7 +431,7 @@ Partial Class frmEntriBarang
         Me.txtMarkUp.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtMarkUp.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtMarkUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtMarkUp.Size = New System.Drawing.Size(256, 22)
+        Me.txtMarkUp.Size = New System.Drawing.Size(253, 22)
         Me.txtMarkUp.StyleController = Me.LayoutControl1
         Me.txtMarkUp.TabIndex = 24
         '
@@ -439,7 +439,7 @@ Partial Class frmEntriBarang
         '
         Me.txtHargaJual.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtHargaJual.EnterMoveNextControl = True
-        Me.txtHargaJual.Location = New System.Drawing.Point(431, 347)
+        Me.txtHargaJual.Location = New System.Drawing.Point(434, 347)
         Me.txtHargaJual.Name = "txtHargaJual"
         Me.txtHargaJual.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaJual.Properties.Appearance.Options.UseFont = True
@@ -448,7 +448,7 @@ Partial Class frmEntriBarang
         Me.txtHargaJual.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtHargaJual.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.txtHargaJual.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtHargaJual.Size = New System.Drawing.Size(256, 22)
+        Me.txtHargaJual.Size = New System.Drawing.Size(253, 22)
         Me.txtHargaJual.StyleController = Me.LayoutControl1
         Me.txtHargaJual.TabIndex = 25
         '
@@ -456,14 +456,14 @@ Partial Class frmEntriBarang
         '
         Me.txtIDSatuanJual.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtIDSatuanJual.EnterMoveNextControl = True
-        Me.txtIDSatuanJual.Location = New System.Drawing.Point(431, 295)
+        Me.txtIDSatuanJual.Location = New System.Drawing.Point(434, 295)
         Me.txtIDSatuanJual.Name = "txtIDSatuanJual"
         Me.txtIDSatuanJual.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDSatuanJual.Properties.Appearance.Options.UseFont = True
         Me.txtIDSatuanJual.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtIDSatuanJual.Properties.NullText = ""
         Me.txtIDSatuanJual.Properties.View = Me.GridView1
-        Me.txtIDSatuanJual.Size = New System.Drawing.Size(256, 22)
+        Me.txtIDSatuanJual.Size = New System.Drawing.Size(91, 22)
         Me.txtIDSatuanJual.StyleController = Me.LayoutControl1
         Me.txtIDSatuanJual.TabIndex = 20
         '
@@ -478,14 +478,14 @@ Partial Class frmEntriBarang
         '
         Me.txtIDSupplier1.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtIDSupplier1.EnterMoveNextControl = True
-        Me.txtIDSupplier1.Location = New System.Drawing.Point(88, 295)
+        Me.txtIDSupplier1.Location = New System.Drawing.Point(91, 295)
         Me.txtIDSupplier1.Name = "txtIDSupplier1"
         Me.txtIDSupplier1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDSupplier1.Properties.Appearance.Options.UseFont = True
         Me.txtIDSupplier1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtIDSupplier1.Properties.NullText = ""
         Me.txtIDSupplier1.Properties.View = Me.GridView2
-        Me.txtIDSupplier1.Size = New System.Drawing.Size(251, 22)
+        Me.txtIDSupplier1.Size = New System.Drawing.Size(248, 22)
         Me.txtIDSupplier1.StyleController = Me.LayoutControl1
         Me.txtIDSupplier1.TabIndex = 13
         '
@@ -542,14 +542,14 @@ Partial Class frmEntriBarang
         '
         Me.txtIDSatuanBeli.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.txtIDSatuanBeli.EnterMoveNextControl = True
-        Me.txtIDSatuanBeli.Location = New System.Drawing.Point(88, 321)
+        Me.txtIDSatuanBeli.Location = New System.Drawing.Point(91, 321)
         Me.txtIDSatuanBeli.Name = "txtIDSatuanBeli"
         Me.txtIDSatuanBeli.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIDSatuanBeli.Properties.Appearance.Options.UseFont = True
         Me.txtIDSatuanBeli.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtIDSatuanBeli.Properties.NullText = ""
         Me.txtIDSatuanBeli.Properties.View = Me.GridView5
-        Me.txtIDSatuanBeli.Size = New System.Drawing.Size(91, 22)
+        Me.txtIDSatuanBeli.Size = New System.Drawing.Size(88, 22)
         Me.txtIDSatuanBeli.StyleController = Me.LayoutControl1
         Me.txtIDSatuanBeli.TabIndex = 16
         '
@@ -597,12 +597,11 @@ Partial Class frmEntriBarang
         '
         Me.ItemForKonversiJual.Control = Me.txtKonversiJual
         Me.ItemForKonversiJual.CustomizationFormText = "Konversi Jual"
-        Me.ItemForKonversiJual.Location = New System.Drawing.Point(163, 0)
+        Me.ItemForKonversiJual.Location = New System.Drawing.Point(162, 0)
         Me.ItemForKonversiJual.Name = "ItemForKonversiJual"
-        Me.ItemForKonversiJual.Size = New System.Drawing.Size(161, 26)
+        Me.ItemForKonversiJual.Size = New System.Drawing.Size(162, 26)
         Me.ItemForKonversiJual.Text = "Konversi Jual"
         Me.ItemForKonversiJual.TextSize = New System.Drawing.Size(63, 13)
-        Me.ItemForKonversiJual.TextToControlDistance = 5
         '
         'LayoutControlGroup1
         '
@@ -655,7 +654,7 @@ Partial Class frmEntriBarang
         Me.ItemForIDKategori.Name = "ItemForIDKategori"
         Me.ItemForIDKategori.Size = New System.Drawing.Size(667, 26)
         Me.ItemForIDKategori.Text = "Kategori"
-        Me.ItemForIDKategori.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForIDKategori.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForKode
         '
@@ -665,7 +664,7 @@ Partial Class frmEntriBarang
         Me.ItemForKode.Name = "ItemForKode"
         Me.ItemForKode.Size = New System.Drawing.Size(667, 26)
         Me.ItemForKode.Text = "Kode"
-        Me.ItemForKode.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForKode.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForBarcode
         '
@@ -675,7 +674,7 @@ Partial Class frmEntriBarang
         Me.ItemForBarcode.Name = "ItemForBarcode"
         Me.ItemForBarcode.Size = New System.Drawing.Size(667, 26)
         Me.ItemForBarcode.Text = "Barcode"
-        Me.ItemForBarcode.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForBarcode.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForNama
         '
@@ -685,7 +684,7 @@ Partial Class frmEntriBarang
         Me.ItemForNama.Name = "ItemForNama"
         Me.ItemForNama.Size = New System.Drawing.Size(667, 26)
         Me.ItemForNama.Text = "Nama"
-        Me.ItemForNama.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForNama.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForKeterangan
         '
@@ -695,7 +694,7 @@ Partial Class frmEntriBarang
         Me.ItemForKeterangan.Name = "ItemForKeterangan"
         Me.ItemForKeterangan.Size = New System.Drawing.Size(667, 26)
         Me.ItemForKeterangan.Text = "Keterangan"
-        Me.ItemForKeterangan.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForKeterangan.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForQtyMax
         '
@@ -705,7 +704,7 @@ Partial Class frmEntriBarang
         Me.ItemForQtyMax.Name = "ItemForQtyMax"
         Me.ItemForQtyMax.Size = New System.Drawing.Size(334, 26)
         Me.ItemForQtyMax.Text = "Qty Max"
-        Me.ItemForQtyMax.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForQtyMax.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForIsAktif
         '
@@ -739,7 +738,7 @@ Partial Class frmEntriBarang
         Me.ItemForQtyMin.Name = "ItemForQtyMin"
         Me.ItemForQtyMin.Size = New System.Drawing.Size(333, 26)
         Me.ItemForQtyMin.Text = "Qty Min"
-        Me.ItemForQtyMin.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForQtyMin.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForAlias
         '
@@ -749,7 +748,7 @@ Partial Class frmEntriBarang
         Me.ItemForAlias.Name = "ItemForAlias"
         Me.ItemForAlias.Size = New System.Drawing.Size(667, 26)
         Me.ItemForAlias.Text = "Alias"
-        Me.ItemForAlias.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForAlias.TextSize = New System.Drawing.Size(63, 13)
         '
         'LayoutControlGroup7
         '
@@ -800,7 +799,7 @@ Partial Class frmEntriBarang
         Me.ItemForIDSupplier1.Name = "ItemForIDSupplier1"
         Me.ItemForIDSupplier1.Size = New System.Drawing.Size(319, 26)
         Me.ItemForIDSupplier1.Text = "Supplier"
-        Me.ItemForIDSupplier1.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForIDSupplier1.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForIDSatuanBeli
         '
@@ -810,7 +809,7 @@ Partial Class frmEntriBarang
         Me.ItemForIDSatuanBeli.Name = "ItemForIDSatuanBeli"
         Me.ItemForIDSatuanBeli.Size = New System.Drawing.Size(159, 26)
         Me.ItemForIDSatuanBeli.Text = "Satuan Beli"
-        Me.ItemForIDSatuanBeli.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForIDSatuanBeli.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForHargaBeli
         '
@@ -820,7 +819,7 @@ Partial Class frmEntriBarang
         Me.ItemForHargaBeli.Name = "ItemForHargaBeli"
         Me.ItemForHargaBeli.Size = New System.Drawing.Size(319, 26)
         Me.ItemForHargaBeli.Text = "Harga Beli"
-        Me.ItemForHargaBeli.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForHargaBeli.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForKonversiBeli
         '
@@ -830,12 +829,12 @@ Partial Class frmEntriBarang
         Me.ItemForKonversiBeli.Name = "ItemForKonversiBeli"
         Me.ItemForKonversiBeli.Size = New System.Drawing.Size(160, 26)
         Me.ItemForKonversiBeli.Text = "Konversi Beli"
-        Me.ItemForKonversiBeli.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForKonversiBeli.TextSize = New System.Drawing.Size(63, 13)
         '
         'LayoutControlGroup6
         '
         Me.LayoutControlGroup6.CustomizationFormText = "Harga Jual"
-        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSatuanJual, Me.ItemForMarkUp, Me.ItemForHargaJual})
+        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.ItemForIDSatuanJual, Me.ItemForMarkUp, Me.ItemForHargaJual, Me.ItemForKonversiJual})
         Me.LayoutControlGroup6.Location = New System.Drawing.Point(343, 0)
         Me.LayoutControlGroup6.Name = "LayoutControlGroup6"
         Me.LayoutControlGroup6.Size = New System.Drawing.Size(348, 122)
@@ -847,9 +846,9 @@ Partial Class frmEntriBarang
         Me.ItemForIDSatuanJual.CustomizationFormText = "ID Satuan Jual"
         Me.ItemForIDSatuanJual.Location = New System.Drawing.Point(0, 0)
         Me.ItemForIDSatuanJual.Name = "ItemForIDSatuanJual"
-        Me.ItemForIDSatuanJual.Size = New System.Drawing.Size(324, 26)
+        Me.ItemForIDSatuanJual.Size = New System.Drawing.Size(162, 26)
         Me.ItemForIDSatuanJual.Text = "Satuan Jual"
-        Me.ItemForIDSatuanJual.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForIDSatuanJual.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForMarkUp
         '
@@ -859,7 +858,7 @@ Partial Class frmEntriBarang
         Me.ItemForMarkUp.Name = "ItemForMarkUp"
         Me.ItemForMarkUp.Size = New System.Drawing.Size(324, 26)
         Me.ItemForMarkUp.Text = "Mark Up"
-        Me.ItemForMarkUp.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForMarkUp.TextSize = New System.Drawing.Size(63, 13)
         '
         'ItemForHargaJual
         '
@@ -869,7 +868,7 @@ Partial Class frmEntriBarang
         Me.ItemForHargaJual.Name = "ItemForHargaJual"
         Me.ItemForHargaJual.Size = New System.Drawing.Size(324, 26)
         Me.ItemForHargaJual.Text = "Harga Jual"
-        Me.ItemForHargaJual.TextSize = New System.Drawing.Size(60, 13)
+        Me.ItemForHargaJual.TextSize = New System.Drawing.Size(63, 13)
         '
         'LayoutControlItem1
         '

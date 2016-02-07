@@ -190,7 +190,7 @@ Public Class frmDaftarMasterBarang
             End With
 
             Pic = GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "Photo") 'EksekusiScalar("SELECT [Photo] FROM HBarang WHERE NoID=" & NullToLong(GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "NoID")))
-            If IsDBNull(Pic) Then
+            If IsDBNull(Pic) Or Pic Is Nothing Then
                 PictureEdit1.Image = Nothing
             Else
                 Using ms As New System.IO.MemoryStream(Pic, 0, Pic.Length)

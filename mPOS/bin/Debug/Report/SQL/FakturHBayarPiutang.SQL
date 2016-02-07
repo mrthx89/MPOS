@@ -1,0 +1,1 @@
+SELECT HBayarPiutangD.*, HBayarPiutang.Kode FROM HBayarPiutang INNER JOIN HBayarPiutangD ON HBayarPiutang.NoID=HBayarPiutangD.IDHeader 

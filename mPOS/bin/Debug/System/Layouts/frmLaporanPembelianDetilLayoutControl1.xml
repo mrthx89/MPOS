@@ -405,7 +405,7 @@
           <property name="GradientMode">Horizontal</property>
         </property>
       </property>
-      <property name="Spacing">2, -1, 2, -1</property>
+      <property name="Spacing">2, -2, 2, -2</property>
       <property name="ParentName">Root</property>
       <property name="Location">@1,X=0@2,Y=72</property>
       <property name="Padding">9, 9, 9, 9</property>
@@ -427,7 +427,7 @@
       <property name="TypeName">TabbedGroup</property>
       <property name="ShowTabHeader">Default</property>
       <property name="HeaderAutoFill">Default</property>
-      <property name="SelectedTabPageName">LayoutControlGroup3</property>
+      <property name="SelectedTabPageName">LayoutControlGroup2</property>
       <property name="HeaderOrientation">Default</property>
     </property>
     <property name="Item8" isnull="true" iskey="true">
@@ -436,7 +436,7 @@
       <property name="Padding">9, 9, 9, 9</property>
       <property name="TextVisible">true</property>
       <property name="Spacing">2, 2, 2, 2</property>
-      <property name="Size">@4,Width=1315@3,Height=187</property>
+      <property name="Size">@4,Width=1314@3,Height=187</property>
       <property name="Expanded">true</property>
       <property name="ExpandOnDoubleClick">false</property>
       <property name="DefaultLayoutType">Vertical</property>
@@ -589,7 +589,7 @@
       <property name="Padding">9, 9, 9, 9</property>
       <property name="TextVisible">true</property>
       <property name="Spacing">2, 2, 2, 2</property>
-      <property name="Size">@4,Width=1315@3,Height=187</property>
+      <property name="Size">@4,Width=1314@3,Height=187</property>
       <property name="Expanded">true</property>
       <property name="ExpandOnDoubleClick">false</property>
       <property name="DefaultLayoutType">Vertical</property>

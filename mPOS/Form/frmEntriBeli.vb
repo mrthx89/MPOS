@@ -46,7 +46,7 @@ Public Class frmEntriBeli
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        pStatus = IsBaru
+        pStatus = IIf(IsBaru = Status.Baru, Status.Baru, Status.Edit)
     End Sub
 
     Private Sub SetTombol()
@@ -254,7 +254,7 @@ Public Class frmEntriBeli
 
                         'HPP = IF(HPP=0,0,IF(QtyPembelian>0,F3+A4*B4,E4*D4))
                         SQL = "INSERT INTO [HKartuStok] ([IDKontak],[KodeReff],[Tanggal],[IDJenisTransaksi],[IDTransaksi],[IDBarang],[IDSatuan],[QtyMasuk],[QtyKeluar],[Konversi],[HPP],[HargaBeliTerakhir],[HargaJualTerakhir]) " & vbCrLf & _
-                              " SELECT HBeli.IDSupplier, HBeli.Kode, HBeli.Tanggal, 1 AS IDJenisTransaksi, HBeli.NoID, HBeliD.IDBarang, HBeliD.IDSatuan, HBeliD.Qty AS QtyMasuk, 0 AS QtyKeluar, HBeliD.Konversi, HBeliD.Harga, HBeliD.Harga, HBarang.HargaJual " & vbCrLf & _
+                              " SELECT HBeli.IDSupplier, HBeli.Kode, HBeli.Tanggal, 1 AS IDJenisTransaksi, HBeli.NoID, HBeliD.IDBarang, HBeliD.IDSatuan, HBeliD.Qty AS QtyMasuk, 0 AS QtyKeluar, HBeliD.Konversi, HBeliD.Harga, HBeliD.Harga, (HBeliD.Jumlah/HBeliD.Konversi)*HBarang.KonversiJual/HBeliD.Qty*(1+(MarkUp/100)) " & vbCrLf & _
                               " FROM HBeliD INNER JOIN HBeli ON HBeli.NoID=HBeliD.IDHeader INNER JOIN HBarang ON HBarang.NoID=HBeliD.IDBarang" & vbCrLf & _
                               " WHERE HBeliD.IDHeader=" & NoID
                         EksekusiSQL(SQL)

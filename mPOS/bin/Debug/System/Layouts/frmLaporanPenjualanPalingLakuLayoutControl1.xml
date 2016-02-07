@@ -405,7 +405,7 @@
           <property name="GradientMode">Horizontal</property>
         </property>
       </property>
-      <property name="Spacing">2, 2, 2, 2</property>
+      <property name="Spacing">2, -2, 2, -2</property>
       <property name="ParentName">Root</property>
       <property name="Location">@1,X=0@2,Y=99</property>
       <property name="Padding">9, 9, 9, 9</property>
@@ -436,7 +436,7 @@
       <property name="Padding">9, 9, 9, 9</property>
       <property name="TextVisible">true</property>
       <property name="Spacing">2, 2, 2, 2</property>
-      <property name="Size">@4,Width=1318@3,Height=158</property>
+      <property name="Size">@4,Width=1314@3,Height=160</property>
       <property name="Expanded">true</property>
       <property name="ExpandOnDoubleClick">false</property>
       <property name="DefaultLayoutType">Vertical</property>
@@ -545,7 +545,7 @@
       <property name="MinSize">@3,Width=104@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@1,Y=0</property>
-      <property name="Size">@3,Width=665@3,Height=158</property>
+      <property name="Size">@3,Width=665@3,Height=160</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -589,7 +589,7 @@
       <property name="Padding">9, 9, 9, 9</property>
       <property name="TextVisible">true</property>
       <property name="Spacing">2, 2, 2, 2</property>
-      <property name="Size">@4,Width=1318@3,Height=158</property>
+      <property name="Size">@4,Width=1314@3,Height=160</property>
       <property name="Expanded">true</property>
       <property name="ExpandOnDoubleClick">false</property>
       <property name="DefaultLayoutType">Vertical</property>
@@ -698,7 +698,7 @@
       <property name="MinSize">@3,Width=104@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@3,X=139@1,Y=0</property>
-      <property name="Size">@3,Width=526@3,Height=158</property>
+      <property name="Size">@3,Width=526@3,Height=160</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />
@@ -746,7 +746,7 @@
       <property name="MinSize">@3,Width=139@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Location">@1,X=0@1,Y=0</property>
-      <property name="Size">@3,Width=139@3,Height=158</property>
+      <property name="Size">@3,Width=139@3,Height=160</property>
       <property name="AppearanceItemCaption" isnull="true" iskey="true">
         <property name="Font">Tahoma, 8.25pt</property>
         <property name="BackColor2" />

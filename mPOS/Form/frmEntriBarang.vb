@@ -143,15 +143,18 @@ Public Class frmEntriBarang
         Try
             cn.ConnectionString = Elliteserv.SQLServer.Connect.KoneksiString
             cn.Open()
-
-            SQL = "UPDATE HBarang SET [Photo]=@photo WHERE NoID=" & NoID
-            With com
-                .CommandText = SQL
-                .Connection = cn
-                .Parameters.Add("@photo", SqlDbType.Image).Value = PictureEdit1.EditValue 'IIf(getDataGambar(PictureEdit1) Is Nothing, Nothing, getDataGambar(PictureEdit1))
-                .ExecuteNonQuery()
+            If Not PictureEdit1.Image Is Nothing Then
+                SQL = "UPDATE HBarang SET [Photo]=@photo WHERE NoID=" & NoID
+                With com
+                    .CommandText = SQL
+                    .Connection = cn
+                    .Parameters.Add("@photo", SqlDbType.Image).Value = PictureEdit1.EditValue 'IIf(getDataGambar(PictureEdit1) Is Nothing, Nothing, getDataGambar(PictureEdit1))
+                    .ExecuteNonQuery()
+                    Return True
+                End With
+            Else
                 Return True
-            End With
+            End If
         Catch ex As Exception
             XtraMessageBox.Show("Info Kesalahan : " & ex.Message, NamaAplikasi, MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return False
@@ -350,14 +353,22 @@ Public Class frmEntriBarang
     End Sub
     Private Sub HitungHargaJualByProsen()
         Try
-            txtHargaJual.EditValue = Bulatkan(txtHargaBeliNetto.EditValue * (1 + (txtMarkUp.EditValue / 100)), 0)
+            If txtKonversiJual.EditValue = 0 Then
+                txtHargaJual.EditValue = Bulatkan(txtHargaBeliNetto.EditValue * (1 + (txtMarkUp.EditValue / 100)), 0)
+            Else
+                txtHargaJual.EditValue = Bulatkan(txtHargaBeliNetto.EditValue * txtKonversiJual.EditValue * (1 + (txtMarkUp.EditValue / 100)), 0)
+            End If
         Catch ex As Exception
 
         End Try
     End Sub
     Private Sub HitungProsenByHargaJual()
         Try
-            txtMarkUp.EditValue = (txtHargaJual.EditValue - txtHargaBeliNetto.EditValue) / txtHargaBeliNetto.EditValue * 100
+            If txtKonversiJual.EditValue = 0 Then
+                txtMarkUp.EditValue = (txtHargaJual.EditValue - txtHargaBeliNetto.EditValue) / txtHargaBeliNetto.EditValue * 100
+            Else
+                txtMarkUp.EditValue = (txtHargaJual.EditValue / txtKonversiJual.EditValue - txtHargaBeliNetto.EditValue) / txtHargaBeliNetto.EditValue * 100
+            End If
         Catch ex As Exception
 
         End Try
@@ -381,5 +392,13 @@ Public Class frmEntriBarang
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub txtIDSatuanJual_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtIDSatuanJual.EditValueChanged
+
+    End Sub
+
+    Private Sub txtKonversiJual_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtKonversiJual.EditValueChanged
+        HitungHargaJualByProsen()
     End Sub
 End Class

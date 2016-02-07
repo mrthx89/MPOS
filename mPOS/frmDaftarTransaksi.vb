@@ -233,7 +233,7 @@ Public Class frmDaftarTransaksi
     Private Sub cmdEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdEdit.Click
         Select Case FormName.ToLower
             Case "frmDaftarPembayaranPiutang".ToLower
-                Dim x As New frmEntriPembayaranPiutang(False)
+                Dim x As New frmEntriPembayaranPiutang(frmEntriPembayaranPiutang.Status.Edit)
                 x.NoID = NullToLong(GridView1.GetFocusedRowCellValue(GridView1.Columns("NoID")))
                 x.ShowInTaskbar = False
                 x.StartPosition = FormStartPosition.CenterParent
@@ -327,7 +327,7 @@ Public Class frmDaftarTransaksi
     Private Sub cmdBaru_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBaru.Click
         Select Case FormName.ToLower
             Case "frmDaftarPembayaranPiutang".ToLower
-                Dim x As New frmEntriPembayaranPiutang(True)
+                Dim x As New frmEntriPembayaranPiutang(frmEntriPembayaranPiutang.Status.Baru)
                 x.ShowInTaskbar = False
                 x.StartPosition = FormStartPosition.CenterParent
                 If x.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then

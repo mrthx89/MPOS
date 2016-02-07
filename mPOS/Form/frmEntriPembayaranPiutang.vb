@@ -481,7 +481,11 @@ Public Class frmEntriPembayaranPiutang
                 Dim Sisa As Double = NullToDbl(GVJual.GetFocusedRowCellValue(GVJual.Columns("Total"))) - NullToDbl(e.Value)
                 If Sisa >= 0 Then
                     GVJual.SetFocusedRowCellValue("Sisa", NullToDbl(GVJual.GetFocusedRowCellValue(GVJual.Columns("Total"))) - NullToDbl(e.Value))
-                    EksekusiSQL("UPDATE HBayarPiutangDJual SET Bayar=" & FixKoma(e.Value) & ", Sisa=Total-" & FixKoma(e.Value) & " WHERE IDBayarPiutang=" & NoID & " AND IDJual=" & NullToLong(GVJual.GetFocusedRowCellValue(GVJual.Columns("NoID"))))
+                    If EksekusiScalar("SELECT COUNT(NoID) FROM HBayarPiutangDJual WHERE IDBayarPiutang=" & NoID & " AND IDJual=" & NullToLong(GVJual.GetFocusedRowCellValue(GVJual.Columns("NoID")))) >= 1 Then
+                        EksekusiSQL("UPDATE HBayarPiutangDJual SET Bayar=" & FixKoma(e.Value) & ", Sisa=Total-" & FixKoma(e.Value) & " WHERE IDBayarPiutang=" & NoID & " AND IDJual=" & NullToLong(GVJual.GetFocusedRowCellValue(GVJual.Columns("NoID"))))
+                    Else
+                        EksekusiSQL("INSERT INTO HBayarPiutangDJual (IDJual, IDBayarPiutang, Total, Bayar, Sisa) VALUES (" & NullToLong(GVJual.GetFocusedRowCellValue(GVJual.Columns("NoID"))) & "," & NoID & "," & FixKoma(NullToDbl(GVJual.GetFocusedRowCellValue(GVJual.Columns("Total")))) & ", " & FixKoma(e.Value) & ", " & FixKoma(NullToDbl(GVJual.GetFocusedRowCellValue(GVJual.Columns("Total"))) - e.Value) & ")")
+                    End If
                     HitungTotal()
                 Else
                     GVJual.SetFocusedRowCellValue("Bayar", 0)
@@ -495,7 +499,11 @@ Public Class frmEntriPembayaranPiutang
                 Dim Sisa As Double = NullToDbl(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("Total"))) - NullToDbl(e.Value)
                 If Sisa >= 0 Then
                     GVReturJual.SetFocusedRowCellValue("Sisa", NullToDbl(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("Total"))) - NullToDbl(e.Value))
-                    EksekusiSQL("UPDATE HBayarPiutangDReturJual SET Bayar=" & FixKoma(e.Value) & ", Sisa=Total-" & FixKoma(e.Value) & " WHERE IDBayarPiutang=" & NoID & " AND IDReturJual=" & NullToLong(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("NoID"))))
+                    If EksekusiScalar("SELECT COUNT(NoID) FROM HBayarPiutangDReturJual WHERE IDBayarPiutang=" & NoID & " AND IDReturJual=" & NullToLong(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("NoID")))) >= 1 Then
+                        EksekusiSQL("UPDATE HBayarPiutangDReturJual SET Bayar=" & FixKoma(e.Value) & ", Sisa=Total-" & FixKoma(e.Value) & " WHERE IDBayarPiutang=" & NoID & " AND IDReturJual=" & NullToLong(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("NoID"))))
+                    Else
+                        EksekusiSQL("INSERT INTO HBayarPiutangDReturJual (IDReturJual, IDBayarPiutang, Total, Bayar, Sisa) VALUES (" & NullToLong(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("NoID"))) & "," & NoID & "," & FixKoma(NullToDbl(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("Total")))) & ", " & FixKoma(e.Value) & ", " & FixKoma(NullToDbl(GVReturJual.GetFocusedRowCellValue(GVReturJual.Columns("Total"))) - e.Value) & ")")
+                    End If
                     HitungTotal()
                 Else
                     GVReturJual.SetFocusedRowCellValue("Bayar", 0)
@@ -515,14 +523,14 @@ Public Class frmEntriPembayaranPiutang
         Select Case e.FocusedColumn.FieldName.ToLower
             Case "Bayar".ToLower, "Keterangan".ToLower, _
             "IDJenisPembayaran".ToLower, "KodeReff".ToLower
-                sender.OptionsBehavior.Editable = True
+                sender.OptionsBehavior.Editable = IIf(pStatus = Status.Baru, False, True)
             Case "Total".ToLower, "Tanggal".ToLower
                 If sender.Name.ToLower = "GVJual".ToLower Then
                     sender.OptionsBehavior.Editable = False
                 ElseIf GVJual.Name.ToLower = "GVReturJual".ToLower Then
                     sender.OptionsBehavior.Editable = False
                 Else
-                    sender.OptionsBehavior.Editable = True
+                    sender.OptionsBehavior.Editable = IIf(pStatus = Status.Baru, False, True)
                 End If
             Case Else
                 sender.OptionsBehavior.Editable = False
@@ -534,14 +542,14 @@ Public Class frmEntriPembayaranPiutang
         Select Case sender.FocusedColumn.FieldName.ToLower
             Case "Bayar".ToLower, "Keterangan".ToLower, _
             "IDJenisPembayaran".ToLower, "KodeReff".ToLower
-                sender.OptionsBehavior.Editable = True
+                sender.OptionsBehavior.Editable = IIf(pStatus = Status.Baru, False, True)
             Case "Total".ToLower, "Tanggal".ToLower
                 If sender.Name.ToLower = "GVJual".ToLower Then
                     sender.OptionsBehavior.Editable = False
                 ElseIf sender.Name.ToLower = "GVReturJual".ToLower Then
                     sender.OptionsBehavior.Editable = False
                 Else
-                    sender.OptionsBehavior.Editable = True
+                    sender.OptionsBehavior.Editable = IIf(pStatus = Status.Baru, False, True)
                 End If
             Case Else
                 sender.OptionsBehavior.Editable = False
@@ -550,8 +558,10 @@ Public Class frmEntriPembayaranPiutang
 
     Private Sub GCJual_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GCJual.DoubleClick
         Try
-            GVJual.SetRowCellValue(GVJual.FocusedRowHandle, "Bayar", GVJual.GetRowCellValue(GVJual.FocusedRowHandle, "Total"))
-            GVJual.SetRowCellValue(GVJual.FocusedRowHandle, "Sisa", 0)
+            If pStatus <> Status.Baru Then
+                GVJual.SetRowCellValue(GVJual.FocusedRowHandle, "Bayar", GVJual.GetRowCellValue(GVJual.FocusedRowHandle, "Total"))
+                GVJual.SetRowCellValue(GVJual.FocusedRowHandle, "Sisa", 0)
+            End If
         Catch ex As Exception
 
         End Try
@@ -559,8 +569,10 @@ Public Class frmEntriPembayaranPiutang
 
     Private Sub GCReturJual_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GCReturJual.DoubleClick
         Try
-            GVReturJual.SetRowCellValue(GVReturJual.FocusedRowHandle, "Bayar", GVReturJual.GetRowCellValue(GVReturJual.FocusedRowHandle, "Total"))
-            GVReturJual.SetRowCellValue(GVReturJual.FocusedRowHandle, "Sisa", 0)
+            If pStatus <> Status.Baru Then
+                GVReturJual.SetRowCellValue(GVReturJual.FocusedRowHandle, "Bayar", GVReturJual.GetRowCellValue(GVReturJual.FocusedRowHandle, "Total"))
+                GVReturJual.SetRowCellValue(GVReturJual.FocusedRowHandle, "Sisa", 0)
+            End If
         Catch ex As Exception
 
         End Try
@@ -568,16 +580,18 @@ Public Class frmEntriPembayaranPiutang
 
     Private Sub GCNotaKredit_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GCNotaKredit.DoubleClick
         Try
-            For i As Integer = 0 To GVNotaKredit.RowCount - 1
-                If NullToStr(GVNotaKredit.GetRowCellValue(i, "Keterangan")) = "" Or NullToDbl(GVNotaKredit.GetRowCellValue(i, "Total")) = 0 Then
-                    Exit Try
-                End If
-            Next
-            GVNotaKredit.AddNewRow()
-            GVNotaKredit.ClearSelection()
-            GVNotaKredit.FocusedRowHandle = GVNotaKredit.RowCount - 1
-            GVNotaKredit.SelectRow(GVNotaKredit.RowCount - 1)
-            GVNotaKredit.SetRowCellValue(GVNotaKredit.RowCount - 1, "Total", 0)
+            If pStatus <> Status.Baru Then
+                For i As Integer = 0 To GVNotaKredit.RowCount - 1
+                    If NullToStr(GVNotaKredit.GetRowCellValue(i, "Keterangan")) = "" Or NullToDbl(GVNotaKredit.GetRowCellValue(i, "Total")) = 0 Then
+                        Exit Try
+                    End If
+                Next
+                GVNotaKredit.AddNewRow()
+                GVNotaKredit.ClearSelection()
+                GVNotaKredit.FocusedRowHandle = GVNotaKredit.RowCount - 1
+                GVNotaKredit.SelectRow(GVNotaKredit.RowCount - 1)
+                GVNotaKredit.SetRowCellValue(GVNotaKredit.RowCount - 1, "Total", 0)
+            End If
         Catch ex As Exception
 
         End Try
@@ -585,16 +599,18 @@ Public Class frmEntriPembayaranPiutang
 
     Private Sub GCNotaDebet_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GCNotaDebet.DoubleClick
         Try
-            For i As Integer = 0 To GVNotaDebet.RowCount - 1
-                If NullToStr(GVNotaDebet.GetRowCellValue(i, "Keterangan")) = "" Or NullToDbl(GVNotaDebet.GetRowCellValue(i, "Total")) = 0 Then
-                    Exit Try
-                End If
-            Next
-            GVNotaDebet.AddNewRow()
-            GVNotaDebet.ClearSelection()
-            GVNotaDebet.FocusedRowHandle = GVNotaDebet.RowCount - 1
-            GVNotaDebet.SelectRow(GVNotaDebet.RowCount - 1)
-            GVNotaDebet.SetRowCellValue(GVNotaDebet.RowCount - 1, "Total", 0)
+            If pStatus <> Status.Baru Then
+                For i As Integer = 0 To GVNotaDebet.RowCount - 1
+                    If NullToStr(GVNotaDebet.GetRowCellValue(i, "Keterangan")) = "" Or NullToDbl(GVNotaDebet.GetRowCellValue(i, "Total")) = 0 Then
+                        Exit Try
+                    End If
+                Next
+                GVNotaDebet.AddNewRow()
+                GVNotaDebet.ClearSelection()
+                GVNotaDebet.FocusedRowHandle = GVNotaDebet.RowCount - 1
+                GVNotaDebet.SelectRow(GVNotaDebet.RowCount - 1)
+                GVNotaDebet.SetRowCellValue(GVNotaDebet.RowCount - 1, "Total", 0)
+            End If
         Catch ex As Exception
 
         End Try
@@ -602,18 +618,52 @@ Public Class frmEntriPembayaranPiutang
 
     Private Sub GCPembayaran_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GCPembayaran.DoubleClick
         Try
-            For i As Integer = 0 To GVPembayaran.RowCount - 1
-                If NullToStr(GVPembayaran.GetRowCellValue(i, "Tanggal")) = "" Or NullToDbl(GVPembayaran.GetRowCellValue(i, "Total")) = 0 Or NullToDbl(GVPembayaran.GetRowCellValue(i, "IDJenisPembayaran")) = 0 Then
-                    Exit Try
-                End If
-            Next
-            GVPembayaran.AddNewRow()
-            GVPembayaran.ClearSelection()
-            GVPembayaran.FocusedRowHandle = GVPembayaran.RowCount - 1
-            GVPembayaran.SelectRow(GVPembayaran.RowCount - 1)
-            GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "Tanggal", Now())
-            GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "IDJenisPembayaran", 1)
-            GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "Total", 0)
+            If pStatus <> Status.Baru Then
+                For i As Integer = 0 To GVPembayaran.RowCount - 1
+                    If NullToStr(GVPembayaran.GetRowCellValue(i, "Tanggal")) = "" Or NullToDbl(GVPembayaran.GetRowCellValue(i, "Total")) = 0 Or NullToDbl(GVPembayaran.GetRowCellValue(i, "IDJenisPembayaran")) = 0 Then
+                        Exit Try
+                    End If
+                Next
+                GVPembayaran.AddNewRow()
+                GVPembayaran.ClearSelection()
+                GVPembayaran.FocusedRowHandle = GVPembayaran.RowCount - 1
+                GVPembayaran.SelectRow(GVPembayaran.RowCount - 1)
+                GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "Tanggal", Now())
+                GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "IDJenisPembayaran", 1)
+                GVPembayaran.SetRowCellValue(GVPembayaran.RowCount - 1, "Total", 0)
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub GridView_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles GVNotaDebet.KeyDown, GVNotaKredit.KeyDown, GVPembayaran.KeyDown
+        If e.KeyCode = Keys.Delete AndAlso pStatus <> Status.Baru Then
+            HapusDetil(sender)
+        End If
+    End Sub
+
+    Private Sub HapusDetil(ByVal GV As DevExpress.XtraGrid.Views.Grid.GridView)
+        Try
+            Select Case GV.Name.ToLower
+                Case "GVNotaDebet".ToLower
+                    SQL = "DELETE FROM HBayarPiutangDNotaDebet WHERE NoID=" & NullToLong(GV.GetFocusedRowCellValue(GV.Columns("NoID")))
+                Case "GVNotaKredit".ToLower
+                    SQL = "DELETE FROM HBayarPiutangDNotaKredit WHERE NoID=" & NullToLong(GV.GetFocusedRowCellValue(GV.Columns("NoID")))
+                Case "GVPembayaran".ToLower
+                    SQL = "DELETE FROM HBayarPiutangDPembayaran WHERE NoID=" & NullToLong(GV.GetFocusedRowCellValue(GV.Columns("NoID")))
+            End Select
+            If EksekusiSQL(SQL) >= 1 Then
+                GV.DeleteRow(GV.FocusedRowHandle)
+                GV.ClearSelection()
+                GV.FocusedRowHandle = GV.RowCount - 1
+                GV.SelectRow(GV.RowCount - 1)
+            Else
+                GV.DeleteRow(GV.FocusedRowHandle)
+                GV.ClearSelection()
+                GV.FocusedRowHandle = GV.RowCount - 1
+                GV.SelectRow(GV.RowCount - 1)
+            End If
         Catch ex As Exception
 
         End Try
